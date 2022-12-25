@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&family=Sarabun&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* p {
+  font-family: "Carter One", cursive;
+  /* font-family: "Prosto One", cursive; */
+  /* font-family: "Rubik Puddles", cursive;
+  font-family: "Sora", sans-serif; */
+}
+
+@media screen and (max-width: 1150px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* @media screen and (max-width: 1150px) {
+  
+}
+
+@media screen and (max-width: 1100px) {
+  
+}
+
+@media screen and (max-width: 1050px) {
+  
+}
+
+@media screen and (max-width: 1000px) {
+  
+}
+
+@media screen and (max-width: 950px) {
+  
+}
+
+@media screen and (max-width: 900px) {
+  
+}
+
+@media screen and (max-width: 800px) {
+  
+} */

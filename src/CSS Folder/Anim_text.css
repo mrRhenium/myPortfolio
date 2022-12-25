@@ -1,0 +1,120 @@
+/* ************************** */
+/* Anim_text CSS */
+/* ************************** */
+
+:root {
+  --container-width: 36rem;
+}
+
+.container {
+  position: relative;
+  height: 2.7rem;
+  /* border: 1px solid red; */
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 0.2rem;
+  height: 100%;
+  background-color: black;
+  animation: carret_blink 0.8s steps(3) infinite;
+}
+
+@keyframes carret_blink {
+  0%,
+  75% {
+    opacity: 1;
+  }
+  76%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.container p {
+  position: relative;
+  height: 100%;
+  font-size: 2rem;
+  /* color: rgb(225, 225, 0); */
+  letter-spacing: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: "Sarabun", sans-serif;
+  animation: typing_text 8s steps(29) infinite;
+}
+
+.container:hover p {
+  animation: typing_text;
+}
+
+@keyframes typing_text {
+  0%,
+  90%,
+  100% {
+    width: 0;
+  }
+  30%,
+  60% {
+    width: var(--container-width);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  :root {
+    --container-width: 43rem;
+  }
+
+  .container {
+    height: 3.5rem;
+    /* border: 1px solid red; */
+  }
+
+  .container p {
+    font-size: 2.5rem;
+  }
+}

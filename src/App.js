@@ -1,12 +1,10 @@
 import React from "react";
-import Home from "./pages/Home";
-import Temp from "./pages/Temp";
+import Background from "./pages/Background";
 
 const App = () => {
   return (
     <>
-      <Home />
-      {/* <Temp /> */}
+      <Background />
     </>
   );
 };

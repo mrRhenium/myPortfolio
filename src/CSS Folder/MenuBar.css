@@ -3,11 +3,12 @@
 /* ************************** */
 
 .container_menu_bar {
-  position: relative;
+  position: fixed;
   display: flex;
-  width: 25rem;
-  height: 3.5rem;
-  margin-right: 2rem;
+  width: 20rem;
+  height: 3rem;
+  right: 1rem;
+  bottom: 1rem;
   border-radius: 10rem;
   border: 0.1rem solid white;
 }

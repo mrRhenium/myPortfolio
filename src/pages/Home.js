@@ -1,7 +1,6 @@
 import React from "react";
 import "../CSS Folder/Home.css";
 import Anim_text from "../components/Anim_text";
-import MenuBar from "../components/MenuBar";
 
 const Home = () => {
   //
@@ -9,8 +8,9 @@ const Home = () => {
   return (
     <>
       <section className="home_page">
-        {/* background part */}
+        {/*  */}
 
+        {/* background part start */}
         <section className="hero_section">
           <div className="hero_left">
             <img src="./assets/home_img.png" alt="developer_image" />
@@ -22,8 +22,9 @@ const Home = () => {
             </div>
           </div>
         </section>
+        {/* background part enda */}
 
-        {/* Forground part */}
+        {/* Forground part start */}
         <section className="hero_absolute_setion">
           <div className="upper_part">
             <div className="intro">
@@ -31,12 +32,10 @@ const Home = () => {
                 <p>Hi There,</p>
               </div>
               <div className="intro_mid">
-                <p>This is Nitesh Yadav</p>
+                <p>This is Nitesh Yadav.</p>
               </div>
               <div className="intro_lower">
-                <span className="profession">
-                  <Anim_text />
-                </span>
+                <span className="profession">{/* <Anim_text /> */}</span>
                 <span className="home_links">
                   <span className="link_linkedin">
                     <a href="#">
@@ -55,8 +54,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="lower_part">{/* <MenuBar /> */}</div>
+          <div className="lower_part"></div>
         </section>
+        {/* Forground part ends */}
+
+        {/*  */}
       </section>
     </>
   );

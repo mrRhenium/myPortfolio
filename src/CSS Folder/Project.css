@@ -7,21 +7,420 @@
   display: flex;
   width: 100%;
   height: 100vh;
-  /* border-top: 1px solid white; */
+  border-top: 1px solid white;
 }
 
 .project_page .section_left {
   position: relative;
   display: flex;
+  flex-direction: column;
   width: 30%;
   height: 100%;
   background-color: #a90d0d;
+  /* border: 1px solid white; */
+}
+
+.project_page .section_menu {
+  position: relative;
+  display: none;
+  width: 100%;
+  background-color: black;
+}
+
+.section_left .upper_part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  /* border: 1px solid white; */
+}
+
+.upper_part h1 {
+  color: white;
+  font-size: 2.8rem;
+  font-family: "Rubik Puddles", cursive;
+  /* font-family: "Andika", sans-serif; */
+  letter-spacing: 0.2rem;
+  text-shadow: 0rem 0rem 10px black;
+}
+
+.upper_part strong {
+  color: lawngreen;
+  font-size: 1.8rem;
+  font-family: "Andika", sans-serif;
+  letter-spacing: 0.2rem;
+  text-shadow: 0rem 0rem 10px black;
+}
+
+.section_left .lower_part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 75%;
+  /* border: 1px solid white; */
+}
+
+.section_left .lower_part .project_links_cntnr {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 75%;
+  /* border: 1px solid yellow; */
+}
+
+.project_links_cntnr .project_links_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 65%;
+  animation: animate_card 5s infinite;
+  /* border: 1px solid white; */
+}
+
+@keyframes animate_card {
+  0%,
+  100% {
+    transform: translateY(-1rem);
+  }
+  50% {
+    transform: translateY(1rem) scale(1.05);
+  }
+}
+
+.project_links_card .card_img_cntnr {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  /* border: 1px solid white; */
+}
+
+.project_links_card .card_title_img {
+  position: relative;
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1px 1px black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.project_links_card .card_title_img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project_links_card .card_link_cntnr {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  width: 100%;
+  height: 50%;
+  /* border: 1px solid white; */
+}
+
+.project_links_card .card_github_link {
+  position: relative;
+  display: flex;
+  width: 10rem;
+  height: 2.2rem;
+  border: 1px solid black;
+  border-radius: 5rem;
+  background-color: white;
+}
+
+.project_links_card .card_deploy_link {
+  position: relative;
+  display: flex;
+  width: 10rem;
+  height: 2.2rem;
+  border: 1px solid black;
+  border-radius: 5rem;
+  background-color: white;
+}
+
+.project_links_card a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Andika", sans-serif;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 5px 1px black;
+}
+.project_links_card a:hover {
+  transform: scale(1.1);
+  box-shadow: inset 0 0 0px 0px black;
+}
+
+.project_links_card a i {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.section_left .lower_part .project_slider_btn_cntnr {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  height: 25%;
+  /* border: 1px solid white; */
+}
+
+.section_left .lower_part .project_slider_btn_cntnr i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 50rem;
+  border: 0.2rem solid white;
+}
+
+.section_left .lower_part .project_slider_btn_cntnr i:hover {
+  color: gold;
+  font-size: 2.5rem;
+  border: 0.2rem solid black;
 }
 
 .project_page .section_right {
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 70%;
   height: 100%;
   background-color: black;
+}
+
+.section_right .upper_part {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  /* border: 1px solid white; */
+}
+
+.section_right .project_details_cntnr {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 80%;
+  /* border: 1px solid white; */
+}
+
+.project_details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+}
+
+.project_details .title_img_cntnr {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40%;
+  /* border: 1px solid white; */
+}
+
+.project_details .project_description {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 60%;
+  /* border: 1px solid white; */
+}
+
+@media screen and (max-width: 1150px) {
+  .project_links_cntnr .project_links_card {
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+}
+
+@media screen and (max-width: 1050px) {
+}
+
+@media screen and (max-width: 1000px) {
+  .project_links_cntnr .project_links_card {
+    height: 48%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 750px) {
+  .project_page {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid yellow; */
+  }
+
+  .project_page .section_left {
+    width: 100%;
+    height: 15%;
+    order: 2;
+  }
+
+  .project_page .section_right {
+    width: 100%;
+    height: 77%;
+    order: 1;
+  }
+
+  .section_right .upper_part {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .upper_part h1 {
+    font-size: 3.5rem;
+  }
+
+  .upper_part strong {
+    font-size: 2.5rem;
+  }
+
+  .project_page .section_menu {
+    display: flex;
+    height: 8%;
+    order: 3;
+  }
+
+  .section_left .upper_part {
+    display: none;
+  }
+
+  .section_left .lower_part {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .section_left .lower_part .project_links_cntnr {
+    width: 60%;
+    height: 100%;
+  }
+  .project_links_cntnr .project_links_card {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    animation: animate_card 3s infinite ease-in-out;
+  }
+
+  @keyframes animate_card {
+    0%,
+    100% {
+      transform: rotateZ(0deg) translateX(-1rem);
+    }
+    50% {
+      transform: rotateZ(0deg) translateX(1rem);
+    }
+  }
+
+  .project_links_card .card_img_cntnr {
+    width: 35%;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  .project_links_card .card_link_cntnr {
+    width: 65%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .project_links_card .card_title_img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .project_links_card .card_github_link,
+  .project_links_card .card_deploy_link {
+    width: 15rem;
+    height: 3rem;
+  }
+
+  .project_links_card a i {
+    font-size: 1.8rem;
+    font-weight: bolder;
+  }
+
+  .section_left .lower_part .project_slider_btn_cntnr {
+    width: 40%;
+    height: 100%;
+    gap: 5rem;
+  }
+
+  .section_left .lower_part .project_slider_btn_cntnr i {
+    font-size: 4rem;
+    width: 4.6rem;
+    height: 4.6rem;
+    border: 0.4rem solid white;
+  }
+
+  .section_left .lower_part .project_slider_btn_cntnr i:hover {
+    font-size: 4.5rem;
+    border: 0.4rem solid black;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .upper_part h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .upper_part h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 360px) {
 }

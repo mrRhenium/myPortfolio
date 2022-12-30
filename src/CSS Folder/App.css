@@ -16,6 +16,10 @@
   font-family: "Andika", sans-serif;
 }
 
+html {
+  scroll-snap-type: y proximity;
+}
+
 body::-webkit-scrollbar {
   width: 0.4rem;
   background-color: black;

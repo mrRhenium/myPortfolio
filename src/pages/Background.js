@@ -8,10 +8,10 @@ const Background = () => {
   return (
     <>
       <div className="background_container">
-        {/* <Home /> */}
+        <Home />
         <Project />
       </div>
-      {/* <MenuBar /> */}
+      <MenuBar />
     </>
   );
 };

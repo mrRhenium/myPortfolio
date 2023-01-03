@@ -17,11 +17,11 @@
 }
 
 html {
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
 
 body::-webkit-scrollbar {
-  width: 0.4rem;
+  width: 0.2rem;
   background-color: black;
 }
 

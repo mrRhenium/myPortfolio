@@ -41,8 +41,8 @@
 .upper_part h1 {
   color: white;
   font-size: 2.8rem;
-  font-family: "Rubik Puddles", cursive;
-  /* font-family: "Andika", sans-serif; */
+  /* font-family: "Rubik Puddles", cursive; */
+  font-family: "Andika", sans-serif;
   letter-spacing: 0.2rem;
   text-shadow: 0rem 0rem 10px black;
 }

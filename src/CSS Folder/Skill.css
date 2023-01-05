@@ -3,6 +3,7 @@
   display: flex;
   width: 100%;
   height: 100vh;
+  background-color: black;
   /* border-top: 1px solid white; */
 }
 
@@ -417,6 +418,8 @@
     height: 50%; /*15 50*/
     order: 2;
     /* border: 1px solid white; */
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
   }
 
   .skill_page .section_right {
@@ -442,7 +445,7 @@
 
   .section_left .lower_part .card {
     width: 95%;
-    height: 90%;
+    height: 80%;
     transform: translateY(0rem);
     /* animation: skill_card_anim 1s infinite; */
     /* border: 1px solid white; */
@@ -466,15 +469,16 @@
   }
 
   .section_left .lower_part .card .head .img {
-    width: 10.5rem;
-    height: 10.5rem;
-    transform: translateX(1.5rem);
+    width: 14.5rem;
+    height: 14.5rem;
+    transform: translateX(3rem);
     /* border: 2px solid black; */
   }
 
   .section_left .lower_part .card .head .title {
-    padding-left: 4rem;
-    transform: translateX(-1.5rem);
+    padding-left: 7rem;
+    padding-right: 1rem;
+    transform: translateX(-3rem);
     animation: card_entry_title_anim 2s 1s;
     animation-fill-mode: forwards;
     /* border: 2px solid black; */
@@ -484,18 +488,18 @@
     0% {
       display: none;
       width: 0rem;
-      height: 6rem;
+      height: 9rem;
     }
     100% {
       display: flex;
-      width: 32rem;
-      height: 6rem;
+      width: 40rem;
+      height: 9rem;
     }
   }
 
   .section_left .lower_part .card .head .title p {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
     animation: card_entry_title_p_anim 1s 3s;
     animation-fill-mode: forwards;
   }
@@ -510,7 +514,7 @@
   }
 
   .section_left .lower_part .card .body {
-    display: flex;
+    /* display: none; */
     width: 100%;
     height: 0%;
     animation: card_entry_body_anim 2s 4s;
@@ -528,10 +532,10 @@
   }
 
   .lower_part .card .body .item_cntnr {
-    width: 33rem;
-    /* height: 100%; */
-    margin-left: 9.3rem;
-    /* border: 1px solid black; */
+    width: 40rem;
+    height: 100%;
+    margin-left: 12.5rem;
+    border-left: 1.2rem solid white;
   }
 
   .lower_part .card .body .item_cntnr .items {
@@ -540,25 +544,25 @@
     /* border: 2px solid black; */
   }
   .lower_part .card .body .item_cntnr .rods {
-    width: 2rem;
-    height: 0.5rem;
+    width: 3rem;
+    height: 0.8rem;
     margin: 0.5rem 0;
   }
 
   .lower_part .card .body .item_cntnr .content {
-    width: 28rem;
-    height: 4.8rem;
+    width: 32rem;
+    height: 6rem;
     padding: 0.3rem;
     border-radius: 3rem;
   }
 
   .lower_part .card .body .item_cntnr .content .img {
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 5.5rem;
+    height: 5.5rem;
   }
 
   .lower_part .card .body .item_cntnr .content .points p {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     line-height: 2.3rem;
     margin: 0 0.8rem;
   }
@@ -574,7 +578,7 @@
   }
 
   .skill_page .upper_part h2 {
-    font-size: 5.5rem;
+    font-size: 7rem;
   }
 
   .skill_page .section_right .lower_part {
@@ -585,7 +589,7 @@
   }
 
   .skill_page .section_right .lower_part .skill_items_cntnr {
-    padding: 1rem;
+    padding: 2rem;
   }
   .skill_page .section_right .lower_part .skill_item {
     gap: 1.8rem;
@@ -613,7 +617,7 @@
   }
 
   .skill_page .section_right .lower_part .skill_item .title p {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .skill_page .section_right .lower_part .skill_item .btn button {

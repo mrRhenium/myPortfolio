@@ -107,15 +107,16 @@
 
 @media screen and (max-width: 750px) {
   :root {
-    --container-width: 38rem;
+    --container-width: 51.5rem;
   }
 
   .container {
-    height: 3.2rem;
+    height: 4.3rem;
     /* border: 1px solid red; */
   }
 
   .container p {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
+    word-break: keep-all;
   }
 }

@@ -189,6 +189,50 @@ const Skill = () => {
                   <button>More</button>
                 </span>
               </span>
+              <span className="skill_item">
+                <span className="img">
+                  <img src="./assets/light bulb.png" alt="" />
+                </span>
+                <span className="title">
+                  <p>HTML</p>
+                </span>
+                <span className="btn">
+                  <button>More</button>
+                </span>
+              </span>
+              <span className="skill_item">
+                <span className="img">
+                  <img src="./assets/light bulb.png" alt="" />
+                </span>
+                <span className="title">
+                  <p>HTML</p>
+                </span>
+                <span className="btn">
+                  <button>More</button>
+                </span>
+              </span>
+              <span className="skill_item">
+                <span className="img">
+                  <img src="./assets/light bulb.png" alt="" />
+                </span>
+                <span className="title">
+                  <p>HTML</p>
+                </span>
+                <span className="btn">
+                  <button>More</button>
+                </span>
+              </span>
+              <span className="skill_item">
+                <span className="img">
+                  <img src="./assets/light bulb.png" alt="" />
+                </span>
+                <span className="title">
+                  <p>HTML</p>
+                </span>
+                <span className="btn">
+                  <button>More</button>
+                </span>
+              </span>
               {/*  */}
             </div>
           </div>

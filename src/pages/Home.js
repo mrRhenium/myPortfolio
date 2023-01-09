@@ -38,6 +38,24 @@ const Home = () => {
                 <span className="profession">
                   <Anim_text />
                 </span>
+                <br />
+                <br />
+                <span className="tag_line_cntnr">
+                  <strong>
+                    I convert the imagination into a creative product.
+                  </strong>
+                  <span className="link_resume">
+                    <a href="#">Resume</a>
+                    <i className="fa fa-cloud-download" aria-hidden="true"></i>
+                  </span>
+                  <span className="link_aboutMe">
+                    <a href="#">About me</a>
+                    <i
+                      className="fa fa-arrow-circle-o-down"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </span>
                 <span className="home_links">
                   <span className="link_linkedin">
                     <a href="#">

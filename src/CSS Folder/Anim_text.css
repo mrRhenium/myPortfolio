@@ -3,7 +3,7 @@
 /* ************************** */
 
 :root {
-  --container-width: 36rem;
+  --container-width: 35.5rem;
 }
 
 .container {
@@ -43,6 +43,7 @@
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
+  /* padding: 0 0.5rem; */
   font-family: "Sarabun", sans-serif;
   animation: typing_text 8s steps(29) infinite;
 }

@@ -448,7 +448,7 @@
     height: 80%;
     transform: translateY(0rem);
     /* animation: skill_card_anim 1s infinite; */
-    /* border: 1px solid white; */
+    /* border: 1px solid white !; */
   }
   @keyframes skill_card_anim {
     0%,

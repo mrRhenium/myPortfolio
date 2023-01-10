@@ -98,6 +98,38 @@ const Skill = () => {
           <div className="upper_part">
             <h2>SKILLS</h2>
           </div>
+          <div className="filter_cntnr">
+            <span className="filter_item active">
+              <p>All</p>
+            </span>
+            <span className="filter_item">
+              <p>Frontent</p>
+            </span>
+            <span className="filter_item">
+              <p>Backend</p>
+            </span>
+            <span className="filter_item">
+              <p>DataBase</p>
+            </span>
+            <span className="filter_item">
+              <p>Libraries</p>
+            </span>
+            <span className="filter_item">
+              <p>NPM Package</p>
+            </span>
+            <span className="filter_item">
+              <p>JS API</p>
+            </span>
+            <span className="filter_item">
+              <p>Design</p>
+            </span>
+            <span className="filter_item">
+              <p>Hosting</p>
+            </span>
+            <span className="filter_item">
+              <p>DSA</p>
+            </span>
+          </div>
           <div className="lower_part">
             <div className="skill_items_cntnr">
               <span className="skill_item active">
@@ -108,7 +140,7 @@ const Skill = () => {
                   <p>HTML</p>
                 </span>
                 <span className="btn">
-                  <button>More</button>
+                  <button>Details</button>
                 </span>
               </span>
               {/* dummy */}

@@ -1,85 +1,128 @@
 /* ************************** */
-/* Home Page CSS */
+/* MENU BAR COMPONENT CSS */
 /* ************************** */
 
 .container_menu_bar {
+  position: fixed;
+  display: flex;
+  width: 8.2rem;
+  height: auto;
+  /* height: 3.2rem; */
+  left: 100%;
+  transform: translateX(-100%);
+  margin-left: -1rem;
+  bottom: 0.5rem;
+  border-radius: 10rem;
+  border: 0.1rem solid white;
+  background-color: rgba(169, 13, 13, 0.3);
+  transition: 1s;
+  overflow: hidden;
+}
+.container_menu_bar:hover {
+  width: 28rem;
+}
+
+.container_menu_bar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 0.5rem;
+  padding: 0.2rem 0.2rem;
+  list-style: none;
+}
+.container_menu_bar:hover ul {
+  padding-right: 0.5rem;
+}
+
+.container_menu_bar ul li {
+  display: flex;
+}
+.container_menu_bar ul li:nth-child(2) {
+  order: 3;
+}
+.container_menu_bar ul li:nth-child(3) {
+  order: 4;
+}
+.container_menu_bar ul li:nth-child(4) {
+  order: 5;
+}
+.container_menu_bar ul li:nth-child(5) {
+  order: 6;
+}
+.container_menu_bar ul li:nth-child(6) {
+  order: 7;
+}
+
+.container_menu_bar ul li.menu_indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+  color: white;
+}
+.container_menu_bar:hover ul li.menu_indicator {
+  display: none;
+}
+.container_menu_bar ul li.menu_indicator span {
+  font-size: 1.2rem;
+  font-family: Ubuntu, sans-serif;
+  margin-left: 0.5rem;
+}
+
+.container_menu_bar ul li span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container_menu_bar ul li span i {
+  color: white;
+  font-size: 1.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  text-align: center;
+  border: 0.1rem solid white;
+  border-radius: 50%;
+  padding: 0.1rem;
+}
+.container_menu_bar ul li span a {
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bolder;
+  font-family: Ubuntu, sans-serif;
+  padding: 0 0.5rem;
+  letter-spacing: 0.1rem;
+  border-radius: 2rem;
+  border: 0.1rem solid white;
+}
+.container_menu_bar ul li:hover i {
+  background-color: #a90d0d;
+}
+.container_menu_bar ul li:hover a {
+  background-color: #a90d0d;
+}
+
+.container_menu_bar ul li.active {
+  order: 2;
+  display: flex;
+}
+.container_menu_bar ul li span.active i {
+  font-size: 1.5rem;
+  color: #a90d0d;
+  width: 2.1rem;
+  height: 2.1rem;
+  /* width: auto;
+  height: auto; */
+  padding: 0.2rem;
+  border: 0.1rem solid #a90d0d;
+  background-color: white;
+}
+.container_menu_bar ul li span.active a {
   display: none;
 }
 
 @media screen and (max-width: 750px) {
-  .container_menu_bar {
-    position: fixed;
-    display: flex;
-    width: 50rem;
-    height: 6rem;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 1rem;
-    border-radius: 10rem;
-    border: 0.1rem solid white;
-    background-color: white;
-  }
-
-  .container_menu_bar ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 0.2rem 1rem;
-  }
-
-  .container_menu_bar ul .indicator {
-    position: absolute;
-    display: flex;
-    width: 5.5em;
-    height: 5.5rem;
-    top: 50%;
-    transform: translate(2rem, -50%);
-    border-radius: 50%;
-    background-color: #09adff;
-  }
-
-  .container_menu_bar ul li {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: black;
-    list-style: none;
-    /* border: 1px solid white; */
-  }
-
-  .container_menu_bar ul li span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.1rem;
-    width: 100%;
-    /* border: 1px solid wheat; */
-  }
-
-  .container_menu_bar ul li span.icon {
-    font-size: 4rem;
-    height: 70%;
-  }
-
-  .container_menu_bar ul li span.icon_name {
-    font-size: 2rem;
-    height: 30%;
-  }
-
-  .container_menu_bar ul li span.icon.active {
-    height: 70%;
-    font-size: 4.5rem;
-    /* transform: translateY(-50%); */
-  }
-
-  .container_menu_bar ul li span.icon_name.active {
-    display: none;
-    height: 30%;
-  }
 }

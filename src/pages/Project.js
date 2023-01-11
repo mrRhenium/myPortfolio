@@ -48,10 +48,63 @@ const Project = () => {
             <h1>PROJECTS</h1>
             <strong>3/5</strong>
           </div>
-          <div className="project_details_cntnr">
+          <div className="lower_part">
             <div className="project_details">
-              <div className="title_img_cntnr"></div>
-              <div className="project_description"></div>
+              <span className="heading">
+                <h2>
+                  <img src="./assets/light bulb.png" alt="" />
+                  <header>
+                    Tournament Organiser
+                    <strong> - It is based on Real Problem.</strong>
+                  </header>
+                </h2>
+                <span className="brief_description">
+                  <p>
+                    This project is build upon my real problem when I playing
+                    the badminton with my friends.
+                    <br />
+                    It is used to organise the Badminton tournament among the
+                    players.It is used to organise the Badminton tournament
+                    among the players.
+                    <img src="./assets/bg.jpg" alt="" />
+                  </p>
+                </span>
+              </span>
+              <span className="points">
+                <p>
+                  <ul>
+                    <li>Local Storage is Used to store the Data.</li>
+                    <li>Randome Matches is organise among the players.</li>
+                    <li>
+                      At the end of Tournament Winners was listed on the
+                      Leaderboard.
+                    </li>
+                    <li>Rematch functionality is avalaible</li>
+                    <li>Match Timing is also Recorded.</li>
+                    <li>Two mode are avalaible for seleting the Winners.</li>
+                  </ul>
+                </p>
+              </span>
+              <span className="tech_used">
+                <h3>TECH. USED : </h3>
+                <span className="tech_used_item">
+                  <p>NodeJs</p>
+                </span>
+                {/*  */}
+                <span className="tech_used_item">
+                  <p>NodeJs</p>
+                </span>
+                <span className="tech_used_item">
+                  <p>NodeJs</p>
+                </span>
+                <span className="tech_used_item">
+                  <p>NodeJs</p>
+                </span>
+                <span className="tech_used_item">
+                  <p>NodeJs</p>
+                </span>
+                {/*  */}
+              </span>
             </div>
           </div>
         </section>

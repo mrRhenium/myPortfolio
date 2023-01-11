@@ -42,7 +42,7 @@
   color: white;
   font-size: 2.8rem;
   /* font-family: "Rubik Puddles", cursive; */
-  font-family: "Andika", sans-serif;
+  font-family: "Gluten", sans-serif;
   letter-spacing: 0.2rem;
   text-shadow: 0rem 0rem 10px black;
 }
@@ -92,7 +92,7 @@
     transform: translateY(-1rem);
   }
   50% {
-    transform: translateY(1rem) scale(1.05);
+    transform: translateY(1rem);
   }
 }
 
@@ -220,7 +220,7 @@
   background-color: black;
 }
 
-.section_right .upper_part {
+.project_page .section_right .upper_part {
   position: relative;
   display: none;
   flex-direction: column;
@@ -231,45 +231,156 @@
   /* border: 1px solid white; */
 }
 
-.section_right .project_details_cntnr {
+.project_page .section_right .lower_part {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85%;
-  height: 80%;
-  /* border: 1px solid white; */
+  width: 90%;
+  height: 85%;
+  bottom: 1rem;
+  border: 1px solid white;
 }
 
 .project_details {
   position: relative;
   display: flex;
-  flex-direction: column;
-  width: 85%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
   height: 90%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(225, 225, 225, 0.2);
   backdrop-filter: blur(50px);
+  /* background-image: url(../../public/assets/bg.jpg);
+  background-size: cover;
+  background-position: center; */
 }
 
-.project_details .title_img_cntnr {
+/* .project_details > span {
+  border: 0.1rem solid white;
+} */
+
+.project_details .heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  max-height: 15rem;
+  padding: 0.5rem;
+  padding-bottom: 0rem;
+  /* background-color: lightcoral; */
+}
+.project_details .heading h2 {
+  display: flex;
+  flex-direction: row;
+}
+.project_details .heading h2 img {
+  position: relative;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  border: 0.1rem solid #a90d0d;
+  border-radius: 50%;
+  background-color: white;
+}
+.project_details .heading h2 header {
+  color: white;
+  display: flex;
+  font-size: 2rem;
+  font-family: Ubuntu, sans-serif;
+  flex-direction: column;
+}
+.project_details .heading h2 header strong {
+  color: lime;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  letter-spacing: 0.1rem;
+}
+.project_details .heading .brief_description {
+  display: flex;
+  flex-direction: row;
+}
+.project_details .heading .brief_description p {
+  display: flex;
+  flex-direction: row;
+  color: lightsalmon;
+  font-size: 1rem;
+  padding-left: 0.2rem;
+  width: fit-content;
+  /* border-left: 0.2rem solid yellow; */
+  border-left: 0.1rem solid #09aeff;
+}
+.project_details .heading .brief_description img {
+  display: flex;
+  width: 12rem;
+  height: 7rem;
+  padding: 0.2rem;
+  transform: translateY(-2rem);
+  border: 0.1rem solid #a90d0d;
+}
+
+.project_details .tech_used {
   position: relative;
   display: flex;
   width: 100%;
-  height: 40%;
-  /* border: 1px solid white; */
+  height: 3.2rem;
+  gap: 0.2rem;
+  padding: 0.2rem 0.8rem;
+  margin-top: auto;
+  border-bottom: 0.1rem solid #09aeff;
+  /* background-color: lightseagreen; */
+}
+.project_details .tech_used h3 {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Andika", sans-serif;
+  letter-spacing: 0.1rem;
+  transform: translateY(-0.7rem);
 }
 
-.project_details .project_description {
+.project_details .tech_used .tech_used_item p {
+  color: white;
+  align-self: flex-end;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  display: block;
+  text-align: center;
+  width: fit-content;
+  height: auto;
+  padding: 0rem 0.6rem;
+  cursor: pointer;
+  background-color: #a90d0d;
+  border: 0.1rem solid white;
+  border-radius: 1rem;
+  transform: translate(-9rem, 1.2rem);
+}
+
+.project_details .points {
   position: relative;
   display: flex;
   width: 100%;
-  height: 60%;
-  /* border: 1px solid white; */
+  height: fit-content;
+  max-height: 10.5rem;
+  padding-left: 2.5rem;
+  /* border: 0.1rem solid white; */
+}
+.project_details .points p {
+  color: lightskyblue;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1150px) {
   .project_links_cntnr .project_links_card {
     height: 60%;
+  }
+
+  .project_details .heading .brief_description p {
+    font-size: 1.1rem;
+  }
+  .project_details .points p {
+    font-size: 1rem;
   }
 }
 
@@ -282,6 +393,45 @@
 @media screen and (max-width: 1000px) {
   .project_links_cntnr .project_links_card {
     height: 48%;
+  }
+
+  .project_details .heading h2 img {
+    width: 5rem;
+    height: 5rem;
+    border: 0.1rem solid #a90d0d;
+  }
+  .project_details .heading h2 header {
+    font-size: 2.3rem;
+  }
+  .project_details .heading h2 header strong {
+    color: lime;
+    font-size: 1.1rem;
+  }
+  .project_details .heading .brief_description p {
+    font-size: 1.2rem;
+  }
+  .project_details .heading .brief_description img {
+    width: 12rem;
+    height: 7rem;
+  }
+
+  .project_details .tech_used {
+    height: 4rem;
+    gap: 0.1rem;
+    /* border: 1px solid red; */
+  }
+
+  .project_details .tech_used h3 {
+    font-size: 1.4rem;
+  }
+  .project_details .tech_used .tech_used_item p {
+    font-size: 0.8rem;
+    height: 1.5rem;
+    transform: translate(-10.5rem, 2rem);
+  }
+
+  .project_details .points p {
+    font-size: 1.21rem;
   }
 }
 
@@ -315,7 +465,7 @@
     justify-content: flex-end;
     height: 15%;
   }
-  .section_right .project_details_cntnr {
+  .section_right .lower_part {
     height: 85%;
   }
 

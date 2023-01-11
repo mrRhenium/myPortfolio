@@ -35,7 +35,9 @@ const Home = () => {
                 <p>This is Nitesh Yadav.</p>
               </div>
               <div className="intro_lower">
-                <span className="profession">{/* <Anim_text /> */}</span>
+                <span className="profession">
+                  <Anim_text />
+                </span>
                 <br />
                 <br />
                 <span className="tag_line_cntnr">

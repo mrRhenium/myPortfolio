@@ -250,7 +250,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   width: 70%;
   height: 100%;
   background-color: black;
@@ -266,17 +266,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  height: 80%;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem 0.5rem;
   gap: 1rem;
-  bottom: 4.5rem;
+  /* bottom: 4.5rem; */
   border-radius: 1rem;
   background-color: rgba(169, 13, 13, 0.3);
   border: 0.1rem solid white;
 }
 .skill_page .section_right .filter_cntnr .filter_item p {
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
   display: block;
@@ -308,7 +309,7 @@
   width: 70%;
   height: 80%;
   margin-top: 2rem;
-  bottom: 4.5rem;
+  bottom: 2.5rem;
   /* right: 2rem; */
   /* border: 1px solid white; */
 }
@@ -350,8 +351,8 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  width: 7rem;
-  height: 9rem;
+  width: 6.5rem;
+  height: 8.5rem;
   border-radius: 1rem;
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(5px);
@@ -359,16 +360,16 @@
   transition: 0.2s;
 }
 .skill_page .section_right .lower_part .skill_item:hover {
-  width: 8rem;
-  height: 10rem;
+  width: 7rem;
+  height: 9rem;
   background-color: rgba(255, 255, 255, 0.6);
   border: 0.2rem solid #09aeff;
   box-shadow: 0 0 0.5rem 1px #09aeff;
 }
 
 .skill_page .section_right .lower_part .skill_item.active {
-  width: 8rem;
-  height: 10rem;
+  width: 7rem;
+  height: 9rem;
   background-color: rgba(255, 255, 255, 0.6);
   border: 0.2rem solid #09aeff;
   box-shadow: 0 0 0.5rem 1px #09aeff;
@@ -377,8 +378,8 @@
 .skill_page .section_right .lower_part .skill_item img {
   position: relative;
   display: flex;
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   overflow: hidden;
   background-color: white;
@@ -389,7 +390,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 80%;
   height: 1.5rem;
   border-radius: 2rem;
   /* border: 1px solid black; */
@@ -398,7 +399,7 @@
 }
 
 .skill_page .section_right .lower_part .skill_item .title p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bolder;
 }
 
@@ -417,53 +418,45 @@
   padding: 0 0.5rem;
   border-radius: 0.5rem;
 }
-
-/* @media screen and (max-width: 1000px) {
-  .skill_page .section_right .lower_part .skill_items_cntnr {
-    padding: 1rem;
+@media screen and (max-width: 1200px) {
+  .skill_page .section_right .filter_cntnr .filter_item p {
+    font-size: 0.9rem;
   }
+}
+@media screen and (max-width: 1000px) {
+  .skill_page .section_right .filter_cntnr .filter_item p {
+    font-size: 1.1rem;
+  }
+
   .skill_page .section_right .lower_part .skill_item {
-    gap: 1.5rem;
-    width: 13rem;
-    height: 17rem;
+    gap: 0.8rem;
+    width: 8rem;
+    height: 11rem;
   }
   .skill_page .section_right .lower_part .skill_item:hover {
-    width: 14rem;
-    height: 18rem;
+    width: 9rem;
+    height: 12rem;
   }
 
   .skill_page .section_right .lower_part .skill_item.active {
-    width: 14rem;
-    height: 18rem;
+    width: 9rem;
+    height: 12rem;
   }
 
   .skill_page .section_right .lower_part .skill_item img {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   .skill_page .section_right .lower_part .skill_item .title {
-    width: 80%;
-    height: 2.8rem;
+    width: 85%;
+    height: 1.8rem;
   }
 
   .skill_page .section_right .lower_part .skill_item .title p {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
   }
-
-  .skill_page .section_right .lower_part .skill_item .btn button {
-    font-size: 1.8rem;
-    border-radius: 1rem;
-    padding: 0 1rem;
-  }
-
-  .skill_page .section_right .lower_part .skill_item .btn:hover button {
-    font-size: 2rem;
-    border-radius: 1rem;
-    padding: 0 1rem;
-    border: 2px solid black;
-  }
-} */
+}
 
 @media screen and (max-width: 750px) {
   .skill_page {

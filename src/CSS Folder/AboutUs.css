@@ -1,0 +1,236 @@
+/* ************************** */
+/* AboutUs Page CSS */
+/* ************************** */
+
+.aboutUs_page {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.aboutUs_page .left_part {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+  /* border: 0.1rem solid white; */
+}
+
+.aboutUs_page .left_part span {
+  position: relative;
+  display: flex;
+  width: 3rem;
+  height: 5rem;
+  background-color: #a90d0d;
+  /* border: 0.1rem solid white; */
+}
+
+.aboutUs_page .left_part .left_design {
+  margin-left: 0rem;
+}
+.aboutUs_page .left_part .left_design span:nth-child(even) {
+  margin-left: 3rem;
+}
+
+.aboutUs_page .left_part .right_design {
+  display: none;
+  margin-left: auto;
+}
+.aboutUs_page .left_part .right_design span:nth-child(odd) {
+  margin-left: 3rem;
+}
+
+.aboutUs_page .right_part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* border: 0.1rem solid white; */
+}
+.aboutUs_page .right_part .content_cntnr {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  padding: 1rem;
+  /* border: 1px solid red; */
+}
+.aboutUs_page .right_part header {
+  color: white;
+  font-size: 2.3rem;
+  font-family: Gluten, sans-serif;
+}
+
+.aboutUs_page .right_part span {
+  position: relative;
+  display: flex;
+  width: 25rem;
+  height: fit-content;
+  padding: 0.1rem 0.2rem;
+  color: red;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border-left: 0.1rem solid yellow;
+}
+/* .aboutUs_page .right_part span:hover {
+  border: 0.1rem solid white;
+} */
+
+.aboutUs_page .right_part span:nth-child(2) {
+  color: cyan;
+  transform: translate(-15rem, 2rem);
+}
+
+.aboutUs_page .right_part span:nth-child(3) {
+  color: lightpink;
+  transform: translate(3rem, 3rem);
+}
+
+.aboutUs_page .right_part span:nth-child(4) {
+  color: lime;
+  transform: translate(-8rem, 6rem);
+}
+
+.aboutUs_page .right_part span:nth-child(5) {
+  color: lightblue;
+  transform: translate(-15rem, 10rem);
+}
+
+.aboutUs_page .right_part .menuBar_cntnr {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 10%;
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 1150px) {
+  .aboutUs_page .left_part span {
+    height: 6rem;
+  }
+
+  .aboutUs_page .right_part span {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+
+  .aboutUs_page .right_part span:nth-child(2) {
+    transform: translate(-12rem, 2rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(3) {
+    transform: translate(6rem, 3rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(4) {
+    transform: translate(-5rem, 6rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(5) {
+    transform: translate(-12rem, 10rem);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .aboutUs_page .right_part header {
+    font-size: 2.7rem;
+    transform: translateY(1rem);
+  }
+
+  .aboutUs_page .right_part span {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    width: 32rem;
+  }
+
+  .aboutUs_page .right_part span:nth-child(2) {
+    transform: translate(-10rem, 3rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(3) {
+    transform: translate(5rem, 5rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(4) {
+    transform: translate(-2rem, 8rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(5) {
+    transform: translate(-9rem, 13rem);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutUs_page .right_part header {
+    font-size: 3rem;
+    transform: translateY(2rem);
+  }
+
+  .aboutUs_page .right_part span {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    width: 30rem;
+  }
+
+  .aboutUs_page .right_part span:nth-child(2) {
+    transform: translate(-10rem, 7rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(3) {
+    transform: translate(8rem, 10rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(4) {
+    transform: translate(-3rem, 15rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(5) {
+    transform: translate(-9rem, 20rem);
+  }
+}
+
+@media screen and (max-width: 950px) {
+}
+
+@media screen and (max-width: 900px) {
+  .aboutUs_page .right_part header {
+    font-size: 3.2rem;
+    transform: translateY(2rem);
+  }
+
+  .aboutUs_page .right_part span {
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+    width: 35rem;
+  }
+
+  .aboutUs_page .right_part span:nth-child(2) {
+    transform: translate(-8rem, 9rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(3) {
+    transform: translate(5rem, 15rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(4) {
+    transform: translate(-1rem, 20rem);
+  }
+
+  .aboutUs_page .right_part span:nth-child(5) {
+    transform: translate(-7rem, 25rem);
+  }
+}
+
+@media screen and (max-width: 800px) {
+}

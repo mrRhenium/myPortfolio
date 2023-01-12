@@ -213,7 +213,7 @@
 }
 .intro .intro_lower .tag_line_cntnr strong {
   font-size: 1.2rem;
-  line-height: 1.8rem;
+  line-height: 1.6rem;
   /* color: #09ffff; */
   /* color: black; */
 }
@@ -226,6 +226,7 @@
   width: auto;
   height: 1.7rem;
   padding: 0 0.5rem;
+  /* transform: translateY(0.5rem); */
   background-color: #a90d0d;
   border-radius: 2rem;
   border: 0.1rem solid white;

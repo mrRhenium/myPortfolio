@@ -4,6 +4,7 @@ import MenuBar from "../components/MenuBar";
 import Home from "./Home";
 import Project from "./Project";
 import Skill from "./Skill";
+import AboutUs from "./AboutUs";
 
 const Background = () => {
   return (
@@ -12,6 +13,7 @@ const Background = () => {
         <Home />
         <Project />
         <Skill />
+        <AboutUs />
       </div>
       <MenuBar />
     </>

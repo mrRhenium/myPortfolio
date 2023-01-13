@@ -9,6 +9,7 @@
 .container {
   position: relative;
   height: 2.7rem;
+  padding: 0rem 0.5rem;
   /* border: 1px solid red; */
 }
 
@@ -114,6 +115,10 @@
   .container {
     height: 4.3rem;
     /* border: 1px solid red; */
+  }
+
+  .container::before {
+    width: 0.3rem;
   }
 
   .container p {

@@ -11,9 +11,9 @@ const Background = () => {
     <>
       <div className="background_container">
         <Home />
-        <Project />
-        <Skill />
-        <AboutUs />
+        {/* <Project /> */}
+        {/* <Skill /> */}
+        {/* <AboutUs /> */}
       </div>
       <MenuBar />
     </>

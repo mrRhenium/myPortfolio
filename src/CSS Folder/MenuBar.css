@@ -14,7 +14,7 @@
   bottom: 0.5rem;
   border-radius: 10rem;
   border: 0.1rem solid white;
-  background-color: rgba(169, 13, 13, 0.3);
+  background-color: rgba(169, 13, 13, 0.5);
   transition: 1s;
   overflow: hidden;
   z-index: 10;
@@ -99,11 +99,22 @@
   border-radius: 2rem;
   border: 0.1rem solid white;
 }
-.container_menu_bar ul li:hover i {
+/* .container_menu_bar ul li:hover i {
   background-color: #a90d0d;
 }
 .container_menu_bar ul li:hover a {
   background-color: #a90d0d;
+} */
+
+.container_menu_bar ul li:hover i {
+  color: #a90d0d;
+  background-color: white;
+  border: 0.1rem solid #a90d0d;
+}
+.container_menu_bar ul li:hover a {
+  color: #a90d0d;
+  background-color: white;
+  border: 0.1rem solid #a90d0d;
 }
 
 .container_menu_bar ul li.active {
@@ -200,5 +211,89 @@
 @media screen and (max-width: 900px) {
   .container_menu_bar ul li span a {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container_menu_bar {
+    width: 19.7rem;
+    margin-left: 0rem;
+    padding: 0.2rem 0;
+    border: 0.3rem solid white;
+    background-color: rgba(169, 13, 13, 0.5);
+  }
+  .container_menu_bar:hover {
+    width: 59rem;
+  }
+  .container_menu_bar ul {
+    padding-left: 0.3rem;
+  }
+  .container_menu_bar:hover ul {
+    justify-content: space-evenly;
+    padding-right: 0.4rem;
+  }
+  .container_menu_bar ul li {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    padding: 0 0.2rem;
+    background-color: #a90d0d;
+    border: 0.3rem solid white;
+  }
+
+  .container_menu_bar ul li.menu_indicator {
+    background-color: transparent;
+    border: 0rem;
+  }
+
+  .container_menu_bar ul li.menu_indicator span {
+    font-size: 3.6rem;
+    margin-left: 0.5rem;
+  }
+  .container_menu_bar ul > li i {
+    font-size: 2rem;
+  }
+
+  .container_menu_bar ul li span i {
+    font-size: 3.2rem;
+    width: fit-content;
+    height: fit-content;
+    transform: translateX(0rem);
+    border: 0rem solid white;
+  }
+  .container_menu_bar ul li span a {
+    font-size: 2.1rem;
+    left: -12rem;
+    border: 0rem solid white;
+  }
+
+  .container_menu_bar ul li:hover {
+    background-color: white;
+    border: 0.3rem solid #a90d0d;
+  }
+
+  .container_menu_bar ul li:hover span i {
+    color: #a90d0d;
+    background-color: white;
+    border: 0rem;
+  }
+  .container_menu_bar ul li:hover span a {
+    color: #a90d0d;
+    background-color: white;
+    border: 0rem;
+  }
+
+  .container_menu_bar ul li.active {
+    border: 0rem;
+  }
+
+  .container_menu_bar ul li span.active i {
+    font-size: 4rem;
+    width: 5rem;
+    height: 5rem;
+    transform: translateX(0rem);
+    border: 0.3rem solid #a90d0d;
   }
 }

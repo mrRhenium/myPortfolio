@@ -10,9 +10,9 @@ const Background = () => {
   return (
     <>
       <div className="background_container">
-        {/* <Home /> */}
+        <Home />
         <Project />
-        {/* <Skill /> */}
+        <Skill />
         {/* <AboutUs /> */}
       </div>
       <MenuBar />

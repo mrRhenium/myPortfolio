@@ -66,8 +66,8 @@ const Project = () => {
                     It is used to organise the Badminton tournament among the
                     players.It is used to organise the Badminton tournament
                     among the players.
-                    <img src="./assets/bg.jpg" alt="" />
                   </p>
+                  <img src="./assets/bg.jpg" alt="" />
                 </span>
               </span>
               <span className="points">

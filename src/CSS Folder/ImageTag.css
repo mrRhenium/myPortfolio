@@ -10,7 +10,7 @@
   align-items: center;
   width: 12rem;
   height: 12rem;
-  right: 0;
+  right: 0rem;
   transform: translate(-1rem, 1rem);
   z-index: 5;
   /* border: 0.1rem solid white; */
@@ -80,5 +80,26 @@
   }
   .imageTag_cntnr button {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .imageTag_cntnr {
+    width: 26rem;
+    height: 29rem;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 8rem);
+  }
+
+  .imageTag_cntnr .aboutUsImg {
+    width: 25rem;
+    height: 25rem;
+    border: 0.5rem solid #a90d0d;
+  }
+  .imageTag_cntnr button {
+    font-size: 2.3rem;
+    letter-spacing: 0.3rem;
+    border: 0.3rem solid white;
   }
 }

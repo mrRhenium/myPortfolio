@@ -30,7 +30,10 @@
 }
 
 .aboutUs_page .left_part .left_design {
+  display: flex;
+  flex-direction: column;
   margin-left: 0rem;
+  /* border: 1px solid white; */
 }
 .aboutUs_page .left_part .left_design span:nth-child(even) {
   margin-left: 3rem;
@@ -38,10 +41,14 @@
 
 .aboutUs_page .left_part .right_design {
   display: none;
+  flex-direction: column;
   margin-left: auto;
 }
 .aboutUs_page .left_part .right_design span:nth-child(odd) {
   margin-left: 3rem;
+}
+.aboutUs_page .left_part header {
+  display: none;
 }
 
 .aboutUs_page .right_part {
@@ -168,9 +175,6 @@
   }
 }
 
-@media screen and (max-width: 1050px) {
-}
-
 @media screen and (max-width: 1000px) {
   .aboutUs_page .right_part header {
     font-size: 3rem;
@@ -232,5 +236,62 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
+  .aboutUs_page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutUs_page .left_part {
+    flex-direction: row;
+    width: 100%;
+    height: 35%;
+    /* border: 0.1rem solid white; */
+  }
+  .aboutUs_page .left_part header {
+    position: relative;
+    display: flex;
+    color: white;
+    font-size: 5.5rem;
+    font-family: Gluten, sans-serif;
+    left: 50%;
+    transform: translate(-20rem, 3rem);
+  }
+
+  .aboutUs_page .left_part span {
+    width: 3rem;
+    height: 4.5rem;
+  }
+
+  .aboutUs_page .left_part .right_design {
+    display: flex;
+  }
+
+  .aboutUs_page .right_part {
+    width: 100%;
+    height: 65%;
+    /* border: 0.1rem solid white; */
+  }
+  .aboutUs_page .right_part .content_cntnr {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 87%;
+    gap: 4rem;
+    padding-top: 2rem;
+    overflow-y: scroll;
+    /* border: 1px solid red; */
+  }
+  .aboutUs_page .right_part header {
+    display: none;
+  }
+  .aboutUs_page .right_part span {
+    width: 95%;
+    font-size: 3.5rem;
+    line-height: 3.6rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-left: 0rem solid yellow;
+    transform: translate(0rem, 0rem) !important;
+  }
 }

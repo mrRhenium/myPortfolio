@@ -6,6 +6,7 @@ const AboutUs = () => {
   return (
     <>
       <section className="aboutUs_page">
+        <ImageTag />
         <section className="left_part">
           <div className="left_design">
             <span></span>
@@ -19,7 +20,13 @@ const AboutUs = () => {
             <span></span>
             <span></span>
           </div>
+          <header>
+            <h3>About Us</h3>
+          </header>
           <div className="right_design">
+            <span></span>
+            <span></span>
+            <span></span>
             <span></span>
             <span></span>
             <span></span>
@@ -30,7 +37,6 @@ const AboutUs = () => {
           </div>
         </section>
         <section className="right_part">
-          <ImageTag />
           <div className="content_cntnr">
             <header>
               <h3>About Us</h3>

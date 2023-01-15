@@ -7,7 +7,7 @@ const AboutUs = () => {
     <>
       <section className="aboutUs_page">
         <ImageTag />
-        <section className="left_part">
+        <div className="left_part">
           <div className="left_design">
             <span></span>
             <span></span>
@@ -35,8 +35,8 @@ const AboutUs = () => {
             <span></span>
             <span></span>
           </div>
-        </section>
-        <section className="right_part">
+        </div>
+        <div className="right_part">
           <div className="content_cntnr">
             <header>
               <h3>About Us</h3>
@@ -61,7 +61,7 @@ const AboutUs = () => {
             </span>
           </div>
           <div className="menuBar_cntnr"></div>
-        </section>
+        </div>
       </section>
     </>
   );

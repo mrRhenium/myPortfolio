@@ -8,6 +8,7 @@
   width: 100%;
   height: 100vh;
   background-color: black;
+  border-bottom: 1px solid white;
   /* background-image: url(./../../public/assets/bg.jpg);
   background-size: cover;
   background-position: center; */

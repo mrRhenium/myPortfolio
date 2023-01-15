@@ -5,7 +5,7 @@ const Project = () => {
   return (
     <>
       <section className="project_page">
-        <section className="section_left">
+        <div className="section_left">
           <div className="upper_part">
             <h1>PROJECTS</h1>
             <strong>3/5</strong>
@@ -42,8 +42,8 @@ const Project = () => {
               <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
             </div>
           </div>
-        </section>
-        <section className="section_right">
+        </div>
+        <div className="section_right">
           <div className="upper_part">
             <h1>PROJECTS</h1>
             <strong>3/5</strong>
@@ -107,8 +107,8 @@ const Project = () => {
               </span>
             </div>
           </div>
-        </section>
-        <section className="section_menu"></section>
+        </div>
+        <div className="section_menu"></div>
       </section>
     </>
   );

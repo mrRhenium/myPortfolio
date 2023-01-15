@@ -5,7 +5,7 @@ const Skill = () => {
   return (
     <>
       <section className="skill_page">
-        <section className="section_left">
+        <div className="section_left">
           <div className="upper_part">
             <h2>SKILLS</h2>
           </div>
@@ -93,8 +93,8 @@ const Skill = () => {
               </div>
             </div>
           </div>
-        </section>
-        <section className="section_right">
+        </div>
+        <div className="section_right">
           <div className="upper_part">
             <h2>SKILLS</h2>
           </div>
@@ -268,8 +268,8 @@ const Skill = () => {
               {/*  */}
             </div>
           </div>
-        </section>
-        <section className="section_menu"></section>
+        </div>
+        <div className="section_menu"></div>
       </section>
     </>
   );

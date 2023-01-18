@@ -4,7 +4,7 @@ import "./../CSS Folder/Skill.css";
 const Skill = () => {
   return (
     <>
-      <section className="skill_page">
+      <section className="skill_page" id="SkillPage">
         <div className="section_left">
           <div className="upper_part">
             <h2>SKILLS</h2>

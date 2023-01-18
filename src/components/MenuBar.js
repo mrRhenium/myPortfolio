@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./../CSS Folder/MenuBar.css";
 
-// const menu_items = document.querySelectorAll(".container_menu_bar ul li");
+// import the npm packages
+// import { Link } from "react-router-dom";
 
-// console.log(typeof menu_items, menu_items);
+const menuBar_data = [
+  { id: 0, icon: "fa fa-home", name: "Home" },
+  { id: 1, icon: "fa fa-check-circle", name: "Project" },
+  { id: 2, icon: "fa fa-cog", name: "Skill" },
+  { id: 3, icon: "fa fa-user", name: "About" },
+  { id: 4, icon: "fa fa-phone", name: "Contact" },
+];
 
-// menu_items.map((item) => {
-//   console.log("hello", item);
-// });
+const MenuBar = ({ lenght }) => {
+  // Initialising useSate Hooks
+  const [slt_iconID, upd_iconID] = useState(0);
 
-const MenuBar = () => {
+  let page_height = lenght / 4;
+  window.onscroll = () => {
+    window.scrollY % page_height == 0 &&
+      upd_iconID(window.scrollY / page_height);
+    // console.log(window.scrollY);
+  };
+
   return (
     <>
       <div className="container_menu_bar">
@@ -17,48 +30,29 @@ const MenuBar = () => {
           <li className="menu_indicator">
             <i className="fa fa-chevron-left" aria-hidden="true"></i>
             <i className="fa fa-chevron-left" aria-hidden="true"></i>
-            <span>Menu</span>
+            <span> Menu </span>
           </li>
-          <li>
-            <span className="icon">
-              <i className="fa fa-home"></i>
-            </span>
-            <span className="icon_name">
-              <a> Home</a>
-            </span>
-          </li>
-          <li className="active">
-            <span className="icon active">
-              <i className="fa fa-home"></i>
-            </span>
-            <span className="icon_name active">
-              <a> Projects</a>
-            </span>
-          </li>
-          <li>
-            <span className="icon">
-              <i className="fa fa-home"></i>
-            </span>
-            <span className="icon_name">
-              <a> Skills</a>
-            </span>
-          </li>
-          <li>
-            <span className="icon">
-              <i className="fa fa-home"></i>
-            </span>
-            <span className="icon_name">
-              <a> About</a>
-            </span>
-          </li>
-          <li>
-            <span className="icon">
-              <i className="fa fa-home"></i>
-            </span>
-            <span className="icon_name">
-              <a> Contanct</a>
-            </span>
-          </li>
+
+          {menuBar_data.map((item, index) => {
+            return (
+              <li
+                key={index}
+                className={item.id == slt_iconID ? "active" : ""}
+                onClick={() => {
+                  upd_iconID(item.id);
+                }}
+              >
+                <a href={`/#${item.name}Page`}>
+                  <span className="icon">
+                    <i className={item.icon}></i>
+                  </span>
+                  <span>
+                    <p>{item.name}</p>
+                  </span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </>

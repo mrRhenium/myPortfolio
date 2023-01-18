@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="home_page">
+      <section className="home_page" id="HomePage">
         {/*  */}
 
         {/* background part start */}

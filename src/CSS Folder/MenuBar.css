@@ -9,9 +9,9 @@
   height: auto;
   /* height: 3.2rem; */
   left: 100%;
-  transform: translateX(-100%);
   margin-left: -1rem;
   bottom: 0.5rem;
+  transform: translateX(-100%);
   border-radius: 10rem;
   border: 0.1rem solid white;
   background-color: rgba(169, 13, 13, 0.5);
@@ -71,6 +71,11 @@
   font-family: Ubuntu, sans-serif;
   margin-left: 0.5rem;
 }
+.container_menu_bar ul li a {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+}
 
 .container_menu_bar ul li span {
   position: relative;
@@ -79,7 +84,7 @@
   align-items: center;
   cursor: pointer;
 }
-.container_menu_bar ul li span i {
+.container_menu_bar ul li a span i {
   color: white;
   font-size: 1.4rem;
   width: 1.8rem;
@@ -89,12 +94,13 @@
   border-radius: 50%;
   padding: 0.1rem;
 }
-.container_menu_bar ul li span a {
+.container_menu_bar ul li a span p {
   color: white;
   font-size: 0.8rem;
   font-weight: bolder;
   font-family: Ubuntu, sans-serif;
   padding: 0 0.5rem;
+  text-decoration: none;
   letter-spacing: 0.1rem;
   border-radius: 2rem;
   border: 0.1rem solid white;
@@ -106,12 +112,12 @@
   background-color: #a90d0d;
 } */
 
-.container_menu_bar ul li:hover i {
+.container_menu_bar ul li:hover a i {
   color: #a90d0d;
   background-color: white;
   border: 0.1rem solid #a90d0d;
 }
-.container_menu_bar ul li:hover a {
+.container_menu_bar ul li:hover a p {
   color: #a90d0d;
   background-color: white;
   border: 0.1rem solid #a90d0d;
@@ -121,7 +127,7 @@
   order: 2;
   display: flex;
 }
-.container_menu_bar ul li span.active i {
+.container_menu_bar ul li.active a span i {
   font-size: 1.5rem;
   color: #a90d0d;
   width: 2.1rem;
@@ -132,7 +138,7 @@
   border: 0.1rem solid #a90d0d;
   background-color: white;
 }
-.container_menu_bar ul li span.active a {
+.container_menu_bar ul li.active a span p {
   display: none;
 }
 
@@ -156,16 +162,16 @@
     margin-left: 0.5rem;
   }
 
-  .container_menu_bar ul li span i {
+  .container_menu_bar ul li a span i {
     font-size: 1.6rem;
     width: 2rem;
     height: 2rem;
   }
-  .container_menu_bar ul li span a {
+  .container_menu_bar ul li a span p {
     font-size: 0.9rem;
   }
 
-  .container_menu_bar ul li span.active i {
+  .container_menu_bar ul li.active a span i {
     font-size: 1.8rem;
     width: 2.3rem;
     height: 2.3rem;
@@ -192,16 +198,16 @@
     margin-left: 0.5rem;
   }
 
-  .container_menu_bar ul li span i {
+  .container_menu_bar ul li a span i {
     font-size: 1.6rem;
     width: 2.2rem;
     height: 2.2rem;
   }
-  .container_menu_bar ul li span a {
+  .container_menu_bar ul li a span p {
     font-size: 1rem;
   }
 
-  .container_menu_bar ul li span.active i {
+  .container_menu_bar ul li.active a span i {
     font-size: 1.9rem;
     width: 2.5rem;
     height: 2.5rem;
@@ -209,7 +215,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .container_menu_bar ul li span a {
+  .container_menu_bar ul li a span p {
     font-size: 1.2rem;
   }
 }
@@ -219,6 +225,7 @@
     width: 19.7rem;
     margin-left: 0rem;
     padding: 0.2rem 0;
+    bottom: 1rem;
     border: 0.3rem solid white;
     background-color: rgba(169, 13, 13, 0.5);
   }
@@ -256,14 +263,14 @@
     font-size: 2rem;
   }
 
-  .container_menu_bar ul li span i {
+  .container_menu_bar ul li a span i {
     font-size: 3.2rem;
     width: fit-content;
     height: fit-content;
     transform: translateX(0rem);
     border: 0rem solid white;
   }
-  .container_menu_bar ul li span a {
+  .container_menu_bar ul li a span p {
     font-size: 2.1rem;
     left: -12rem;
     border: 0rem solid white;
@@ -274,12 +281,12 @@
     border: 0.3rem solid #a90d0d;
   }
 
-  .container_menu_bar ul li:hover span i {
+  .container_menu_bar ul li:hover a span i {
     color: #a90d0d;
     background-color: white;
     border: 0rem;
   }
-  .container_menu_bar ul li:hover span a {
+  .container_menu_bar ul li:hover a span p {
     color: #a90d0d;
     background-color: white;
     border: 0rem;
@@ -289,7 +296,7 @@
     border: 0rem;
   }
 
-  .container_menu_bar ul li span.active i {
+  .container_menu_bar ul li.active a span i {
     font-size: 4rem;
     width: 5rem;
     height: 5rem;

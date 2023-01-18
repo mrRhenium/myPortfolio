@@ -5,7 +5,7 @@ import "../CSS Folder/AboutUs.css";
 const AboutUs = () => {
   return (
     <>
-      <section className="aboutUs_page">
+      <section className="aboutUs_page" id="AboutPage">
         <ImageTag />
         <div className="left_part">
           <div className="left_design">

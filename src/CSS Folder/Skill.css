@@ -39,7 +39,7 @@
   color: white;
   font-size: 3.5rem;
   font-weight: lighter;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   font-family: Gluten, sans-serif;
   text-shadow: 1px 1px 10px black;
 }
@@ -56,7 +56,7 @@
 
 .section_left .lower_part .card {
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100%;
   height: 27rem;
@@ -71,6 +71,9 @@
   50% {
     transform: translateY(1rem);
   }
+}
+.section_left .lower_part .card.active {
+  display: flex;
 }
 
 .section_left .lower_part .card .head {
@@ -103,14 +106,13 @@
   height: 0rem;
   border-radius: 5rem;
   background-color: white;
-  transform: translateX(-1rem);
+  transform: translateX(-1.1rem);
   z-index: 0;
-  padding-left: 2rem;
-  animation: card_entry_title_anim 2s 1s;
+  padding-left: 2.5rem;
+  animation: card_entry_title_anim 1s 0.5s;
   animation-fill-mode: forwards;
   /* border: 2px solid black; */
 }
-
 @keyframes card_entry_title_anim {
   0% {
     display: none;
@@ -129,7 +131,7 @@
   line-height: 1.4rem;
   word-break: keep-all;
   opacity: 0;
-  animation: card_entry_title_p_anim 1s 3s;
+  animation: card_entry_title_p_anim 0.5s 1.5s;
   animation-fill-mode: forwards;
 }
 
@@ -148,7 +150,7 @@
   width: 100%;
   height: 0%;
   overflow: hidden;
-  animation: card_entry_body_anim 2s 4s;
+  animation: card_entry_body_anim 1s 2s;
   animation-fill-mode: forwards;
   /* border: 1px solid white; */
 }
@@ -167,7 +169,7 @@
   display: flex;
   flex-direction: column;
   width: 16rem;
-  /* height: 90%; */
+  max-height: 95%;
   height: fit-content;
   padding-top: 0.5rem;
   margin-left: 3.5rem;
@@ -178,7 +180,7 @@
 }
 .item_cntnr::-webkit-scrollbar {
   width: 0.1rem;
-  /* background-color: black; */
+  background-color: black;
 }
 
 .item_cntnr::-webkit-scrollbar-thumb {
@@ -194,8 +196,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 3.3rem;
-  /* margin: 0.2rem 0; */
+  height: fit-content;
+  margin: 0.2rem 0;
   /* border: 2px solid black; */
 }
 .lower_part .card .body .item_cntnr .rods {
@@ -218,7 +220,7 @@
   background-color: white;
   overflow: hidden;
   transform: translateX(-0.5rem);
-  animation: card_entry_body_content_anim 0.5s 6s;
+  animation: card_entry_body_content_anim 1s 3s;
   animation-fill-mode: forwards;
 }
 @keyframes card_entry_body_content_anim {
@@ -241,7 +243,7 @@
 
 .lower_part .card .body .item_cntnr .content .points p {
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.1rem;
   word-break: keep-all;
   margin: 0 0.5rem;
 }
@@ -274,6 +276,7 @@
   /* bottom: 2.5rem; */
   border-radius: 1rem;
   background-color: rgba(169, 13, 13, 0.3);
+  /* background-color: rgba(25, 255, 5, 0.5); */
   border: 0.1rem solid white;
 }
 .skill_page .section_right .filter_cntnr .filter_item p {
@@ -288,17 +291,20 @@
   height: auto;
   padding: 0rem 0.6rem;
   cursor: pointer;
+  text-transform: capitalize;
   background-color: #a90d0d;
   border: 0.1rem solid white;
   border-radius: 1rem;
 }
 .skill_page .section_right .filter_cntnr .filter_item.active p {
   color: #a90d0d;
+  font-weight: bolder;
   background-color: white;
   border: 0.1rem solid #a90d0d;
 }
 .skill_page .section_right .filter_cntnr .filter_item:hover p {
   color: #a90d0d;
+  font-weight: bolder;
   background-color: white;
   border: 0.1rem solid #a90d0d;
 }

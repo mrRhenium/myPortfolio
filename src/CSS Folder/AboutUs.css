@@ -65,15 +65,33 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  gap: 2.5rem;
   align-items: center;
-  width: 100%;
+  width: 98%;
   height: 90%;
   padding: 1rem;
+  overflow-y: scroll;
   /* border: 1px solid red; */
 }
+
+.aboutUs_page .right_part .content_cntnr::-webkit-scrollbar {
+  width: 0.1rem;
+  /* background-color: black; */
+}
+
+.aboutUs_page .right_part .content_cntnr::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.aboutUs_page .right_part .content_cntnr::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 .aboutUs_page .right_part header {
   color: white;
   font-size: 2.3rem;
+  letter-spacing: 0.2rem;
   font-family: Gluten, sans-serif;
 }
 
@@ -82,34 +100,40 @@
   display: flex;
   width: 25rem;
   height: fit-content;
+  opacity: 0;
+  transform: translate(auto, -1rem);
   padding: 0.1rem 0.2rem;
-  color: red;
+  color: lightskyblue;
   font-size: 1.2rem;
   line-height: 1.5rem;
   border-left: 0.1rem solid yellow;
 }
-/* .aboutUs_page .right_part span:hover {
-  border: 0.1rem solid white;
-} */
 
-.aboutUs_page .right_part span:nth-child(2) {
-  color: cyan;
-  transform: translate(-15rem, 2rem);
+.aboutUs_page .right_part.active span {
+  animation: about_anim 0.5s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes about_anim {
+  0% {
+    opacity: 0;
+    transform: translate(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(auto, 0rem);
+  }
 }
 
-.aboutUs_page .right_part span:nth-child(3) {
-  color: lightpink;
-  transform: translate(3rem, 3rem);
+.aboutUs_page .right_part span:nth-child(even) {
+  color: lightcoral;
+  transform: translateX(-13rem);
 }
 
-.aboutUs_page .right_part span:nth-child(4) {
-  color: lime;
-  transform: translate(-8rem, 6rem);
+.aboutUs_page .right_part span:nth-child(odd) {
+  transform: translateX(8rem);
 }
-
-.aboutUs_page .right_part span:nth-child(5) {
-  color: lightblue;
-  transform: translate(-15rem, 10rem);
+.aboutUs_page .right_part span.imp {
+  color: lime !important;
 }
 
 .aboutUs_page .right_part .menuBar_cntnr {
@@ -130,20 +154,17 @@
     line-height: 1.5rem;
   }
 
-  .aboutUs_page .right_part span:nth-child(2) {
-    transform: translate(-12rem, 2rem);
+  .aboutUs_page .right_part .content_cntnr {
+    gap: 3rem;
   }
 
-  .aboutUs_page .right_part span:nth-child(3) {
-    transform: translate(6rem, 3rem);
+  .aboutUs_page .right_part span:nth-child(even) {
+    color: lightcoral;
+    transform: translateX(-11rem);
   }
 
-  .aboutUs_page .right_part span:nth-child(4) {
-    transform: translate(-5rem, 6rem);
-  }
-
-  .aboutUs_page .right_part span:nth-child(5) {
-    transform: translate(-12rem, 10rem);
+  .aboutUs_page .right_part span:nth-child(odd) {
+    transform: translateX(7rem);
   }
 }
 
@@ -159,20 +180,13 @@
     width: 32rem;
   }
 
-  .aboutUs_page .right_part span:nth-child(2) {
-    transform: translate(-10rem, 3rem);
+  .aboutUs_page .right_part .content_cntnr {
+    gap: 3.5rem;
   }
 
-  .aboutUs_page .right_part span:nth-child(3) {
-    transform: translate(5rem, 5rem);
-  }
-
-  .aboutUs_page .right_part span:nth-child(4) {
-    transform: translate(-2rem, 8rem);
-  }
-
-  .aboutUs_page .right_part span:nth-child(5) {
-    transform: translate(-9rem, 13rem);
+  .aboutUs_page .right_part span:nth-child(even) {
+    color: lightcoral;
+    transform: translateX(-9rem);
   }
 }
 
@@ -187,25 +201,16 @@
     line-height: 1.6rem;
     width: 30rem;
   }
-
-  .aboutUs_page .right_part span:nth-child(2) {
-    transform: translate(-10rem, 7rem);
-  }
-
-  .aboutUs_page .right_part span:nth-child(3) {
-    transform: translate(8rem, 10rem);
-  }
-
-  .aboutUs_page .right_part span:nth-child(4) {
-    transform: translate(-3rem, 15rem);
-  }
-
-  .aboutUs_page .right_part span:nth-child(5) {
-    transform: translate(-9rem, 20rem);
-  }
 }
 
 @media screen and (max-width: 950px) {
+  .aboutUs_page .right_part span {
+    font-size: 1.7rem;
+  }
+
+  .aboutUs_page .right_part .content_cntnr {
+    gap: 5rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -220,20 +225,17 @@
     width: 35rem;
   }
 
-  .aboutUs_page .right_part span:nth-child(2) {
-    transform: translate(-8rem, 9rem);
+  .aboutUs_page .right_part .content_cntnr {
+    gap: 6.8rem;
   }
 
-  .aboutUs_page .right_part span:nth-child(3) {
-    transform: translate(5rem, 15rem);
+  .aboutUs_page .right_part span:nth-child(even) {
+    color: lightcoral;
+    transform: translateX(-7rem);
   }
 
-  .aboutUs_page .right_part span:nth-child(4) {
-    transform: translate(-1rem, 20rem);
-  }
-
-  .aboutUs_page .right_part span:nth-child(5) {
-    transform: translate(-7rem, 25rem);
+  .aboutUs_page .right_part span:nth-child(odd) {
+    transform: translateX(5rem);
   }
 }
 

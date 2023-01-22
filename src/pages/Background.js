@@ -32,15 +32,6 @@ const Background = () => {
   return (
     <>
       <div className="background_container">
-        {/* <Routes>
-          <Route path="/home" element=iHome />} />
-          <Route path="/project" eleme.home_pagent={<Project />} />
-
-          console.log(home_page);
-          <Route path="/skill" element={<Skill />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<AboutUs />} />
-        </Routes> */}
         <Home />
         <Project />
         <Skill />
@@ -52,3 +43,15 @@ const Background = () => {
 };
 
 export default Background;
+
+{
+  /* <Routes>
+          <Route path="/home" element=iHome />} />
+          <Route path="/project" eleme.home_pagent={<Project />} />
+
+          console.log(home_page);
+          <Route path="/skill" element={<Skill />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<AboutUs />} />
+        </Routes> */
+}

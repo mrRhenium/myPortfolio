@@ -507,17 +507,17 @@
 
   .intro .intro_lower .tag_line_cntnr span a,
   .intro .intro_lower .tag_line_cntnr span i {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .intro .intro_lower .home_links span {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
     border: 0.3rem solid white;
   }
 
   .intro .intro_lower .home_links span i {
-    font-size: 2.5rem;
+    font-size: 3.7rem;
   }
 
   /* .hero_absolute_setion .lower_part {

@@ -4,6 +4,12 @@ import "./../CSS Folder/MenuBar.css";
 // import the npm packages
 // import { Link } from "react-router-dom";
 
+const MenuComponent = {
+  id: 4,
+  keywords: "Menu",
+  menuBar_data: [],
+};
+
 const menuBar_data = [
   { id: 0, icon: "fa fa-home", name: "Home" },
   { id: 1, icon: "fa fa-check-circle", name: "Project" },

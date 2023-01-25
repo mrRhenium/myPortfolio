@@ -1,9 +1,7 @@
 import React from "react";
-import "../CSS Folder/Anim_text.css";
+import "../CSS Folder/Anim_Text.css";
 
-const Anim_text = () => {
-  // Start
-
+const Anim_Text = () => {
   return (
     <>
       <div className="container">
@@ -13,4 +11,4 @@ const Anim_text = () => {
   );
 };
 
-export default Anim_text;
+export default Anim_Text;

@@ -1,96 +1,106 @@
 import React, { useEffect, useState } from "react";
 import "./../CSS Folder/Project.css";
 
+const ProjectPage = {
+  id: 1,
+  keywords: {
+    heading: "PROJECTS",
+    card_1st_link: "View Code",
+    card_2nd_link: "Deploy",
+  },
+  project_data: [],
+};
+
 const project_data = [
   {
     id: 0,
-    titleImg: "./assets/light bulb.png",
-    title: "Tournament Organiser",
-    subTitle: "- It is based on Real Problem.",
-    description: `This project is build upon my real problem when I playing the badminton with my friends. It is used to organise the Badminton tournament among the players..`,
-    descriptionImg: "./assets/bg.jpg",
-
+    rank: 1,
+    active: 1,
+    gitHubLink: "https://github.com/mrRhenium/tournamentOrganiser",
+    siteLink: "https://mrrhenium.github.io/tournamentOrganiser/",
+    titleImg: "./assets/project/trtmt_logo.png",
+    title: "Tournament Organiser App",
+    subTitle: "- It is based on my Real Problem.",
+    descriptionImg: "./assets/project/trtmt_site.png",
+    description: `PROBLEM : When we used to play badminton like sports with my friends. We were facing the problem😢 of fixing the accurate matches among the multiple players, remembering each player's match record & profiles and it also very time consuming process. But after this Web Application we resolve all problems.😎`,
     points: [
-      "Local Storage is Used to store the Data.",
+      "Eye Catching UI is implement.",
+      "User's can send their Feedback.",
+      "Firebase database is to stored the user's feedback.",
+      "Local Storage is Used to store the tournament data.",
+      "Optimized Algorithms are use to decide matches.",
       "Randome Matches is organise among the players.",
-      "At the end of Tournament Winners wated on the Leaderboard.",
+      "At the end of Tournament Winners are listed on the Leaderboard.",
       "Rematch functioy is avalaible.",
       "Match Timing is also Recorded.",
-      "Two mode are avalaible for seleting the Winners.",
     ],
-    techUsed: ["NodeJs", "NodeJs", "NodeJs", "NodeJs"],
+    techUsed: ["Firebase", "JavaScript", "CSS", "HTML", "Figma", "JS API's"],
   },
   {
     id: 1,
-    titleImg: "./assets/light bulb.png",
-    title: "Tournament Organiser",
-    subTitle: "- It is based on Real Problem.",
-    description: `This project is build upon my real problem when I playing the badminton with my friends. It is used to organise the Badminton tournament among the players..`,
-    descriptionImg: "./assets/bg.jpg",
-
+    rank: 2,
+    active: 1,
+    gitHubLink: "https://github.com/mrRhenium/Weather-75",
+    siteLink: "https://mrrhenium.github.io/Weather-75/",
+    titleImg: "./assets/project/weather_logo.png",
+    title: "Weather Report Web-App.",
+    subTitle: `- It is based on "How to use API's".`,
+    descriptionImg: "./assets/project/weather_site.png",
+    description: `It is the Web-Application based on "How to use API's". It is use to search weather report of any city in the world. we are using the API's for generating the Weather information.
+    AI is use for Voice Synthesis who tell us the weather info., Let's Check-Out.`,
     points: [
-      "Local Storage is Used to store the Data.",
-      "Randome Matches is organise among the players.",
-      "At the end of Tournament Winners wated on the Leaderboard.",
-      "Rematch functioy is avalaible.",
-      "Match Timing is also Recorded.",
-      "Two mode are avalaible for seleting the Winners.",
+      "Run on any device : Full Responsive.",
+      "API's is Used to build the application.",
+      "Voice's search Functionality is implemented.",
+      "We can also Hear the information -> AI is use for Voice Synthesis.",
+      "User's can give feedback to us.",
+      "Firebase is used to store the data.",
+      "Best UI/UX created : Attractive animation is used.",
     ],
-    techUsed: ["NodeJs", "NodeJs", "NodeJs", "NodeJs"],
+    techUsed: ["JavaScript", "CSS", "HTML", "Firbase", "JS API's"],
   },
   {
     id: 2,
-    titleImg: "./assets/light bulb.png",
-    title: "Tournament Organiser",
-    subTitle: "- It is based on Real Problem.",
-    description: `This project is build upon my real problem when I playing the badminton with my friends. It is used to organise the Badminton tournament among the players..`,
-    descriptionImg: "./assets/bg.jpg",
-
+    rank: 3,
+    active: 1,
+    gitHubLink: "https://github.com/mrRhenium/ImagesUpload",
+    siteLink: "https://github.com/mrRhenium/ImagesUpload",
+    titleImg: "./assets/project/dualSvr_logo.png",
+    title: "Working with Dual Server.",
+    subTitle: "- This type of project nowhere on Internet.",
+    descriptionImg: "./assets/project/dualSvr_site.png",
+    description: `PROBLEM : Whenever we create any Text-Image uploading app like Instagram and other Social Media like applications. It usually contain huge data and images which increase the load on server, through it server become slow and heavy. For overcome these type of situatiosn, they are using more than one server.`,
     points: [
-      "Local Storage is Used to store the Data.",
-      "Randome Matches is organise among the players.",
-      "At the end of Tournament Winners wated on the Leaderboard.",
-      "Rematch functioy is avalaible.",
-      "Match Timing is also Recorded.",
-      "Two mode are avalaible for seleting the Winners.",
+      "Get, Post, Update, Delete with data (Text-Image) functionality is implemented.",
+      "CORS (Cross Origin Resource Sharing) is implemented in it.",
+      "Fully Backend Project.",
+      "Have Dual Server (Main-Server & Media-Server).",
+      "Primary Server is used for text related data and Medial Server is used for Images.",
+      "Fs, CORS & Multer Module is used in it.",
+      "Self-Made project: Not found on Internet.",
     ],
-    techUsed: ["NodeJs", "NodeJs", "NodeJs", "NodeJs"],
+    techUsed: ["Node-Js", "Express", "MongoDB", "NPM Packages", "HTML"],
   },
   {
     id: 3,
-    titleImg: "./assets/light bulb.png",
-    title: "Tournament Organiser",
-    subTitle: "- It is based on Real Problem.",
-    description: `This project is build upon my real problem when I playing the badminton with my friends. It is used to organise the Badminton tournament among the players..`,
-    descriptionImg: "./assets/bg.jpg",
-
+    rank: 4,
+    active: 1,
+    gitHubLink: "https://myportfolio-0.1-version.netlify.app/",
+    siteLink: "https://github.com/mrRhenium/myPortfolio",
+    titleImg: "./assets/project/portfolio_logo.png",
+    title: "My Portfolio.",
+    subTitle: "- Best UI/UX project",
+    descriptionImg: "./assets/project/portfolio_site.png",
+    description: `You already know about this project which you are seeing here is my Portfolio. This is frontent + Database related project. Whole Data which you are seeing is fetch from the Database and rendering on you Browser. Animation is used on Every Page.`,
     points: [
-      "Local Storage is Used to store the Data.",
-      "Randome Matches is organise among the players.",
-      "At the end of Tournament Winners wated on the Leaderboard.",
-      "Rematch functioy is avalaible.",
-      "Match Timing is also Recorded.",
-      "Two mode are avalaible for seleting the Winners.",
+      "It is React-Js based Frontent + Database Project.",
+      "Intersection & Resize Observer (JS-API's) is Used in it.",
+      "Menu Icons dynamically change on Scrolling.",
+      "Slide-Show function is implemented in it.",
+      "Feedback and Rate-Us funtionality in it.",
+      "Less write and Do more : This project is perfect example of it.",
     ],
-    techUsed: ["NodeJs", "NodeJs", "NodeJs", "NodeJs"],
-  },
-  {
-    id: 4,
-    titleImg: "./assets/light bulb.png",
-    title: "Tournament Organiser",
-    subTitle: "- It is based on Real Problem.",
-    description: `This project is build upon my real problem when I playing the badminton with my friends. It is used to organise the Badminton tournament among the players..`,
-    descriptionImg: "./assets/bg.jpg",
-
-    points: [
-      "Local Storage is Used to store the Data.",
-      "Randome Matches is organise among the players.",
-      "At the end of Tournament Winners wated on the Leaderboard.",
-      "Rematch functioy is avalaible.",
-      "Match Timing is also Recorded.",
-      "Two mode are avalaible for seleting the Winners.",
-    ],
-    techUsed: ["NodeJs", "NodeJs", "NodeJs", "NodeJs"],
+    techUsed: ["React-Js", "Firebase", "HTML", "CSS", "JS-API's"],
   },
 ];
 
@@ -171,15 +181,15 @@ const Project = () => {
                 </div>
                 <div className="card_link_cntnr">
                   <span className="card_github_link">
-                    <a href="">
-                      <i className="fa fa-github" aria-hidden="true"></i>
-                      <i>{pjtId + 1} Preview</i>
+                    <a href={project_data[pjtId].gitHubLink} target="_blank">
+                      <i className="fa fa-eye" aria-hidden="true"></i>
+                      <i>View-Code</i>
                     </a>
                   </span>
                   <span className="card_deploy_link">
-                    <a href="">
-                      <i className="fa fa-github" aria-hidden="true"></i>
-                      <i>{pjtId + 1} Deploy</i>
+                    <a href={project_data[pjtId].siteLink} target="_blank">
+                      <i className="fa fa-external-link" aria-hidden="true"></i>
+                      <i>Deploy</i>
                     </a>
                   </span>
                 </div>

@@ -1,8 +1,21 @@
 import React from "react";
 import "../CSS Folder/Home.css";
-import Anim_text from "../components/Anim_text";
+import Anim_Text from "../components/Anim_Text";
+
+const HomePage = {
+  id: 0,
+  keywords: {
+    hero_img: "./assets/home_img.png",
+    hero_upper_text: "Hi There,",
+    hero_mid_text: "This is Nitesh Yadav.",
+    profession_line: "I am Full-Stack Web Developer",
+    tag_line:
+      "I convert the imagination into a creative product. I am also good Problem Solver",
+  },
+};
 
 const Home = () => {
+  const tag_line = "I convert the imagination into a creative product";
   //
 
   return (
@@ -36,20 +49,18 @@ const Home = () => {
               </div>
               <div className="intro_lower">
                 <span className="profession">
-                  <Anim_text />
+                  <Anim_Text />
                 </span>
                 <br />
                 <br />
                 <span className="tag_line_cntnr">
-                  <strong>
-                    I convert the imagination into a creative product.
-                  </strong>
+                  <strong>{tag_line}</strong>
                   <span className="link_resume">
                     <a href="#">Resume</a>
                     <i className="fa fa-cloud-download" aria-hidden="true"></i>
                   </span>
                   <span className="link_aboutMe">
-                    <a href="#">About me</a>
+                    <a href="#AboutPage">About me</a>
                     <i
                       className="fa fa-arrow-circle-o-down"
                       aria-hidden="true"

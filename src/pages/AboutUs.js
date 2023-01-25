@@ -2,38 +2,6 @@ import React, { useEffect } from "react";
 import ImageTag from "../components/ImageTag";
 import "../CSS Folder/AboutUs.css";
 
-const AboutUsPage = {
-  id: 3,
-  keywords: {
-    heading: "About Us",
-  },
-  about_data: [
-    {
-      id: 0,
-      imp: false,
-      content:
-        "I am passionate in the programming and logic building & I am also enjoy building User Experience and Interface",
-    },
-    {
-      id: 1,
-      imp: false,
-      content:
-        "I am Passionate and curious to learn new Technologies & their Applications.",
-    },
-    {
-      id: 2,
-      imp: true,
-      content: "I am also a Good Problem Solver. 1000+ Questions solved.",
-    },
-    {
-      id: 3,
-      imp: false,
-      content:
-        "I have a Competative thinking which help me to grow fast and more and more.",
-    },
-  ],
-};
-
 const about_data = [
   {
     id: 0,
@@ -50,13 +18,13 @@ const about_data = [
   {
     id: 2,
     imp: true,
-    content: "I am also a Good Problem Solver. 450+ Questions solved.",
+    content: "I am also a Good Problem Solver. 1500+ ratings on LeetCode",
   },
   {
     id: 3,
     imp: false,
     content:
-      "I have a Competative thinking which help me to grow fast and more and more.",
+      "I have a Competative thinking which help me to grow fast and learn more & more.",
   },
 ];
 

@@ -1,16 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./../CSS Folder/Project.css";
 
-const ProjectPage = {
-  id: 1,
-  keywords: {
-    heading: "PROJECTS",
-    card_1st_link: "View Code",
-    card_2nd_link: "Deploy",
-  },
-  project_data: [],
-};
-
 const project_data = [
   {
     id: 0,
@@ -26,8 +16,8 @@ const project_data = [
     points: [
       "Eye Catching UI is implement.",
       "User's can send their Feedback.",
-      "Firebase database is to stored the user's feedback.",
-      "Local Storage is Used to store the tournament data.",
+      "Firebase database is used to stored the user's feedback.",
+      "Local Storage is used to store the app related data.",
       "Optimized Algorithms are use to decide matches.",
       "Randome Matches is organise among the players.",
       "At the end of Tournament Winners are listed on the Leaderboard.",
@@ -75,7 +65,7 @@ const project_data = [
       "CORS (Cross Origin Resource Sharing) is implemented in it.",
       "Fully Backend Project.",
       "Have Dual Server (Main-Server & Media-Server).",
-      "Primary Server is used for text related data and Medial Server is used for Images.",
+      "Primary Server is used for text related data and Media Server is used for Images.",
       "Fs, CORS & Multer Module is used in it.",
       "Self-Made project: Not found on Internet.",
     ],
@@ -106,8 +96,7 @@ const project_data = [
 
 const Project = () => {
   const [pjtId, upd_pjtId] = useState(0);
-  let total_pjt = project_data.length;
-  // console.log(pjtId, total_pjt);
+  let totalPjt = project_data.length;
 
   useEffect(() => {
     //
@@ -119,9 +108,9 @@ const Project = () => {
       (e) => {
         if (e[0].isIntersecting) {
           slideShow = setInterval(() => {
-            upd_pjtId((pjtId + 1) % total_pjt);
+            upd_pjtId((pjtId + 1) % totalPjt);
             // console.log(pjtId, "slideShow is started");
-          }, 2500);
+          }, 3000);
         } else {
           clearInterval(slideShow);
         }
@@ -144,7 +133,7 @@ const Project = () => {
     });
 
     project_cntnr.addEventListener("mouseleave", () => {
-      upd_pjtId((pjtId + 1) % total_pjt);
+      upd_pjtId((pjtId + 1) % totalPjt);
       // console.log("Mouse Out");
     });
 
@@ -166,7 +155,7 @@ const Project = () => {
         <div className="section_left">
           <div className="upper_part">
             <h1>PROJECTS</h1>
-            <strong>{pjtId + 1 + "/" + total_pjt}</strong>
+            <strong>{pjtId + 1 + "/" + totalPjt}</strong>
           </div>
           <div className="lower_part">
             <div className="project_links_cntnr">
@@ -181,13 +170,21 @@ const Project = () => {
                 </div>
                 <div className="card_link_cntnr">
                   <span className="card_github_link">
-                    <a href={project_data[pjtId].gitHubLink} target="_blank">
+                    <a
+                      href={project_data[pjtId].gitHubLink}
+                      target="_blank"
+                      rel="external"
+                    >
                       <i className="fa fa-eye" aria-hidden="true"></i>
                       <i>View-Code</i>
                     </a>
                   </span>
                   <span className="card_deploy_link">
-                    <a href={project_data[pjtId].siteLink} target="_blank">
+                    <a
+                      href={project_data[pjtId].siteLink}
+                      target="_blank"
+                      rel="external"
+                    >
                       <i className="fa fa-external-link" aria-hidden="true"></i>
                       <i>Deploy</i>
                     </a>
@@ -202,7 +199,7 @@ const Project = () => {
                     return (
                       <li
                         key={index}
-                        className={item.id == pjtId ? "active" : ""}
+                        className={item.id === pjtId ? "active" : ""}
                         onClick={() => {
                           upd_pjtId(item.id);
                         }}
@@ -217,12 +214,12 @@ const Project = () => {
                 <i
                   className="fa fa-arrow-circle-o-left"
                   aria-hidden="true"
-                  onClick={() => upd_pjtId((pjtId - 1 + total_pjt) % total_pjt)}
+                  onClick={() => upd_pjtId((pjtId - 1 + totalPjt) % totalPjt)}
                 ></i>
                 <i
                   className="fa fa-arrow-circle-o-right"
                   aria-hidden="true"
-                  onClick={() => upd_pjtId((pjtId + 1) % total_pjt)}
+                  onClick={() => upd_pjtId((pjtId + 1) % totalPjt)}
                 ></i>
               </span>
             </div>
@@ -231,7 +228,7 @@ const Project = () => {
         <div className="section_right">
           <div className="upper_part">
             <h1>PROJECTS</h1>
-            <strong>3/5</strong>
+            <strong>{pjtId + 1 + "/" + totalPjt}</strong>
           </div>
           <div className="lower_part">
             {/*  */}

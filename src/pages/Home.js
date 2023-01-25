@@ -1,18 +1,6 @@
 import React from "react";
 import "../CSS Folder/Home.css";
-import Anim_Text from "../components/Anim_Text";
-
-const HomePage = {
-  id: 0,
-  keywords: {
-    hero_img: "./assets/home_img.png",
-    hero_upper_text: "Hi There,",
-    hero_mid_text: "This is Nitesh Yadav.",
-    profession_line: "I am Full-Stack Web Developer",
-    tag_line:
-      "I convert the imagination into a creative product. I am also good Problem Solver",
-  },
-};
+import AnimText from "../components/AnimText";
 
 const Home = () => {
   const tag_line = "I convert the imagination into a creative product";
@@ -49,14 +37,20 @@ const Home = () => {
               </div>
               <div className="intro_lower">
                 <span className="profession">
-                  <Anim_Text />
+                  <AnimText />
                 </span>
                 <br />
                 <br />
                 <span className="tag_line_cntnr">
                   <strong>{tag_line}</strong>
                   <span className="link_resume">
-                    <a href="#">Resume</a>
+                    <a
+                      href="https://www.linkedin.com/in/nitesh--yadav/"
+                      target="_blank"
+                      rel="external"
+                    >
+                      Resume
+                    </a>
                     <i className="fa fa-cloud-download" aria-hidden="true"></i>
                   </span>
                   <span className="link_aboutMe">
@@ -69,7 +63,11 @@ const Home = () => {
                 </span>
                 <span className="home_links">
                   <span className="link_linkedin">
-                    <a href="#">
+                    <a
+                      href="https://www.linkedin.com/in/nitesh--yadav/"
+                      target="_blank"
+                      rel="external"
+                    >
                       <i
                         className="fa fa-linkedin-square"
                         aria-hidden="true"
@@ -77,7 +75,11 @@ const Home = () => {
                     </a>
                   </span>
                   <span className="link_github">
-                    <a href="#">
+                    <a
+                      href="https://github.com/mrRhenium"
+                      target="_blank"
+                      rel="external"
+                    >
                       <i className="fa fa-github" aria-hidden="true"></i>
                     </a>
                   </span>

@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Prosto+One&family=Sarabun&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Gluten&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gluten&family=Ubuntu&display=swap?family=Andika&display=swap");
 
 * {
   margin: 0;
@@ -11,11 +7,8 @@
 }
 
 * p {
-  /* font-family: "Carter One", cursive; */
-  /* font-family: "Prosto One", cursive; */
-  /* font-family: "Rubik Puddles", cursive; */
-  /* font-family: "Sora", sans-serif; */
   font-family: "Andika", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
 }
 
 html {

@@ -105,7 +105,7 @@ const skill_data = [
     rank: 3,
     titleImg: "./assets/skill/mongo.png",
     title: "MONGO Database",
-    subtitle: "Mongo-DB",
+    subtitle: "MongoDB",
     category: ["backend", "database"],
     points: [
       {
@@ -897,6 +897,7 @@ const Skill = () => {
                           ? "skill_item active"
                           : "skill_item"
                       }
+                      onClick={() => upd_sltSkillId(item.rank - 1)}
                     >
                       <span className="img">
                         <img src={item.titleImg} alt={item.subtitle} />

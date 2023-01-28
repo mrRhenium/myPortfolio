@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gluten&family=Ubuntu&display=swap?family=Andika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gluten&family=Sarabun&family=Ubuntu&display=swap?family=Andika&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,6 @@
 
 * p {
   font-family: "Andika", sans-serif;
-  /* font-family: "Ubuntu", sans-serif; */
 }
 
 html {

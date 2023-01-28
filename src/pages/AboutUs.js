@@ -45,7 +45,7 @@ const AboutUs = () => {
       },
       {
         root: null,
-        threshold: 1,
+        threshold: 0.8,
       }
     );
     observer.observe(about_page);

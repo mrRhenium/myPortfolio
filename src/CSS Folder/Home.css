@@ -261,7 +261,7 @@
 }
 
 .intro .intro_lower .tag_line_cntnr .link_aboutMe i {
-  animation: abouteMe_arrow_anime 2s infinite;
+  animation: abouteMe_arrow_anime 0.8s infinite;
 }
 @keyframes abouteMe_arrow_anime {
   0%,

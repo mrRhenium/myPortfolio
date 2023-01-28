@@ -378,16 +378,21 @@
   backdrop-filter: blur(5px);
   border: 0.1rem solid white;
   transition: 0.2s;
-  transform: translate(0, 3rem) rotateY(360deg);
+  opacity: 0.5;
+  transform: translate(0, 5rem) rotateY(180deg);
 }
 .section_right .lower_part .skill_items_cntnr.active .skill_item {
   display: flex;
-  animation: skill_item_anim 1.5s ease-in-out forwards;
+  animation: skill_item_anim 1s ease-in-out forwards;
 }
 @keyframes skill_item_anim {
   0% {
     opacity: 0.5;
-    transform: translate(0, 2rem) rotateY(360deg);
+    transform: translate(0, 5rem) rotateY(180deg);
+  }
+  80% {
+    opacity: 0.5;
+    transform: translate(0, 0rem) rotateY(180deg);
   }
   100% {
     opacity: 1;
@@ -557,15 +562,22 @@
   }
   .skill_page .section_left .lower_part .close_btn_cntnr.active i {
     margin: 0.5rem 2rem;
-    transform: rotateX(0deg);
+    transform: rotateZ(0deg);
   }
 
   .skill_page .section_left .lower_part .close_btn_cntnr i {
     display: flex;
-    color: white;
+    color: #a90d0d;
     font-size: 4.5rem;
     font-weight: lighter;
-    transform: rotateX(180deg);
+    width: fit-content;
+    height: fit-content;
+    padding: 0.2rem;
+    border: 0.3rem solid black;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: rotateZ(180deg);
+    background-color: white;
   }
 
   .section_left .lower_part .card {

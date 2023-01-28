@@ -18,7 +18,7 @@ const menuBar_data = [
   { id: 4, icon: "fa fa-phone", name: "Contact" },
 ];
 
-const MenuBar = ({ lenght }) => {
+const MenuBar = ({ lenght, openContact }) => {
   // Initialising useSate Hooks
   const [slt_iconID, upd_iconID] = useState(0);
 
@@ -45,7 +45,11 @@ const MenuBar = ({ lenght }) => {
                 key={index}
                 className={item.id == slt_iconID ? "active" : ""}
                 onClick={() => {
-                  upd_iconID(item.id);
+                  if (item.id == 4) {
+                    openContact();
+                  } else {
+                    upd_iconID(item.id);
+                  }
                 }}
               >
                 <a href={`/#${item.name}Page`}>

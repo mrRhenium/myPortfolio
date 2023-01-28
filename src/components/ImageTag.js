@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS Folder/ImageTag.css";
 
-const ImageTag = () => {
+const ImageTag = ({ openContact }) => {
   return (
     <>
       <div className="imageTag_cntnr">
@@ -9,7 +9,11 @@ const ImageTag = () => {
           <img src="./assets/aboutImg_bg.png" alt="" />
           <img src="./assets/aboutImg.png" alt="" />
         </div>
-        <button>
+        <button
+          onClick={() => {
+            openContact();
+          }}
+        >
           Contact me
           <i className="fa fa-phone" aria-hidden="true"></i>
         </button>

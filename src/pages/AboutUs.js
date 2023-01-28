@@ -28,7 +28,7 @@ const about_data = [
   },
 ];
 
-const AboutUs = () => {
+const AboutUs = ({ openContact }) => {
   //
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const AboutUs = () => {
   return (
     <>
       <section className="aboutUs_page" id="AboutPage">
-        <ImageTag />
+        <ImageTag openContact={openContact} />
         <div className="left_part">
           <div className="left_design">
             <span></span>

@@ -49,7 +49,6 @@
 .popUp_box .contact_page header h3:nth-child(2) {
   font-size: 1.7rem;
   margin: 0.2rem 0.5rem;
-  text-shadow: 0 0 0.3rem white;
 }
 
 .popUp_box .contact_page .links {
@@ -131,5 +130,45 @@
 
   .popUp_box .contact_page .links span button {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .popUp_box {
+    width: 50rem;
+    height: 30rem;
+  }
+  .popUp_box .contact_page .imageTag_cntnr {
+    width: 23rem;
+    height: 23rem;
+  }
+  .popUp_box .contact_page .imageTag_cntnr .aboutUsImg {
+    width: 19rem;
+    height: 19rem;
+    background-color: white;
+  }
+
+  .popUp_box .contact_page header h3 {
+    font-size: 7.3rem;
+    transform: translate(1.5rem, 1rem);
+    text-shadow: 0 0 1rem white;
+  }
+  .popUp_box .contact_page header h3:nth-child(2) {
+    font-size: 3.5rem;
+  }
+
+  .popUp_box .contact_page .links {
+    width: 88%;
+    height: 60%;
+    /* border: 1px solid white; */
+  }
+
+  .popUp_box .contact_page .links span i {
+    font-size: 4.5rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .popUp_box .contact_page .links span button {
+    font-size: 3.5rem;
   }
 }

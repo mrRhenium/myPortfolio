@@ -569,7 +569,8 @@
     border: 0.2rem solid white;
   }
   .project_details .heading {
-    border-bottom: 0.3rem solid yellow;
+    border-bottom: 0.3rem solid #09aeff;
+    height: 65%;
   }
 
   .project_details .heading h2 img {
@@ -615,15 +616,16 @@
     padding-left: 0rem;
     padding: 1rem;
     overflow-x: scroll;
+    height: 15%;
     border-bottom: 0 solid #09aeff;
   }
   .project_details .tech_used h3 {
     width: fit-content;
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 
   .project_details .tech_used .tech_used_item p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
     padding: 0rem 1rem;
@@ -633,10 +635,12 @@
   }
 
   .project_details .points {
+    height: 20%;
     padding-left: 4rem;
     overflow-y: scroll;
     padding: 3rem auto;
-    border-bottom: 0.3rem solid yellow;
+    border-bottom: 0.3rem solid #09aeff;
+    padding-left: 6rem;
   }
   .project_details .points ol li {
     font-size: 3rem;
@@ -669,13 +673,13 @@
   }
 
   .section_left .lower_part .project_links_cntnr {
-    width: 60%;
+    width: 70%;
     height: 100%;
     /* border: 1px solid white; */
   }
 
   .project_links_cntnr .project_links_card {
-    width: 90%;
+    width: 100%;
     height: 100%;
     gap: 0.5rem;
     flex-direction: row;
@@ -695,17 +699,19 @@
   }
 
   .project_links_card .card_img_cntnr {
-    width: 35%;
+    width: 30%;
     height: 100%;
     justify-content: flex-end;
-    margin-left: 1rem;
+    /* border: 1px solid white; */
+    /* margin-left: 1rem; */
   }
 
   .project_links_card .card_link_cntnr {
-    width: 65%;
+    width: 70%;
     height: 100%;
     justify-content: center;
     align-items: flex-start;
+    /* border: 1px solid white; */
   }
 
   .project_links_card .card_link_cntnr span {
@@ -713,33 +719,34 @@
   }
 
   .project_links_card .card_title_img {
-    width: 11rem;
-    height: 11rem;
+    width: 14rem;
+    height: 14rem;
   }
 
   .project_links_card a i {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
   }
 
   .section_left .lower_part .project_slider_btn_cntnr {
     justify-content: center;
     gap: 1rem;
-    width: 40%;
+    width: 30%;
     height: 100%;
+    /* border: 1px solid white; */
   }
   .section_left .lower_part .project_slider_btn_cntnr .project_indicator ul {
     gap: 1rem;
   }
 
   .project_slider_btn_cntnr .project_indicator ul li i {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .section_left .lower_part .project_slider_btn_cntnr .slider_btn {
     gap: 2rem;
   }
   .section_left .lower_part .project_slider_btn_cntnr .slider_btn i {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 

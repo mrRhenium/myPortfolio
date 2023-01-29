@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../CSS Folder/Contact.css";
 import ImageTag from "../components/ImageTag";
 
 const Contact = () => {
+  const [mobile, upd_mobile] = useState(0);
+
+  useEffect(() => {
+    const background = document.querySelector(".background_container");
+    // console.log(background);
+    if (background.clientWidth <= 750) {
+      upd_mobile(1);
+    }
+
+    return () => {
+      upd_mobile(0);
+    };
+  }, []);
+
   return (
     <>
       <div className="contact_page">
@@ -21,7 +35,11 @@ const Contact = () => {
             <ImageTag />
             <span>
               <a
-                href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=XBcJlHgSVlLtJSwLSdRhmFDXKPHdZFfPvMjlkllbMWPGzQhtJWdqKJRVCSQbsGBcRcvjVKDfnFJJGQXQ"
+                href={
+                  mobile
+                    ? "mailto:?to=niteshyadav75614@gmail.com"
+                    : "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?to=niteshyadav75614@gmail.com&compose=XBcJlHgSVlLtJSwLSdRhmFDXKPHdZFfPvMjlkllbMWPGzQhtJWdqKJRVCSQbsGBcRcvjVKDfnFJJGQXQ"
+                }
                 target="_blank"
                 rel="external"
               >

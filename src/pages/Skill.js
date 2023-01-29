@@ -243,7 +243,7 @@ const skill_data = [
       {
         id: 4,
         img: "./assets/skill/correct2.jpg",
-        content: "Clud Storage",
+        content: "Cloude Storage",
       },
       {
         id: 5,
@@ -714,101 +714,80 @@ const skillCategory_data = [
     id: 9,
     name: "DSA",
   },
+  {
+    id: 10,
+    name: "Others",
+  },
 ];
 
 const Skill = () => {
   const [sltSkillId, upd_sltSkillId] = useState(0);
   const [categoryId, upd_categoryId] = useState(0);
-  const [filter_btn, upd_filter_btn] = useState(0);
-  const [exp_btn, upd_exp_btn] = useState(0);
+  const [expandBtn, upd_expandBtn] = useState(1);
+
+  const showSkillDetails = (left, right) => {
+    if (expandBtn) {
+      left.classList.add("active");
+      right.classList.add("active");
+    } else {
+      left.classList.remove("active");
+      right.classList.remove("active");
+    }
+    upd_expandBtn(!expandBtn);
+  };
 
   useEffect(() => {
-    //
-    const background = document.querySelector(".background_container");
-    // console.log(background);
-
-    if (background.clientWidth >= 750) {
-      upd_filter_btn(1);
-    }
-
-    //
-    //
-    const close_btn = document.querySelector(
-      ".skill_page .section_left .lower_part .close_btn_cntnr"
+    const expandButton = document.querySelector(".skill_page .section_left i");
+    const detailButton = document.querySelectorAll(
+      ".skill_page .section_right .lower_part .skill_item .btn button"
     );
+
     const section_left = document.querySelector(".skill_page .section_left");
     const section_right = document.querySelector(".skill_page .section_right");
-    const card_body = document.querySelector(
-      ".skill_page .section_left .lower_part .card .body"
-    );
-    close_btn.addEventListener("click", () => {
-      if (exp_btn) {
-        upd_exp_btn(0);
-        section_left.classList.remove("active");
-        section_right.classList.remove("active");
-        card_body.classList.remove("active");
-        close_btn.classList.remove("active");
-      } else {
-        upd_exp_btn(1);
-        section_left.classList.add("active");
-        section_right.classList.add("active");
-        card_body.classList.add("active");
-        close_btn.classList.add("active");
-      }
-    });
-    //
-    //
+
+    const expandButtonFunction = () => {
+      showSkillDetails(section_left, section_right);
+    };
+
+    const detailButtonFunction = () => {
+      if (expandBtn) showSkillDetails(section_left, section_right);
+    };
+
+    expandButton.addEventListener("click", expandButtonFunction);
+
+    for (let x of detailButton) {
+      x.addEventListener("click", detailButtonFunction);
+    }
 
     const skill_page = document.querySelector(".skill_page");
-    const detail_card = document.querySelector(
-      ".skill_page .section_left .lower_part .card"
-    );
-    const skill_item_cntnr = document.querySelector(
-      ".skill_page .section_right .skill_items_cntnr"
-    );
-    const filter_cntnr = document.querySelector(
-      ".skill_page .section_right .filter_cntnr"
-    );
-    const flt = document.querySelector(
-      ".skill_page .section_right .filter_cntnr i"
-    );
-    flt.addEventListener("click", () => {
-      if (filter_btn) {
-        upd_filter_btn(0);
-        filter_cntnr.classList.add("deactive");
-        skill_item_cntnr.classList.add("deactive");
-      } else {
-        upd_filter_btn(1);
-        filter_cntnr.classList.remove("deactive");
-        skill_item_cntnr.classList.remove("deactive");
-      }
-    });
-
-    detail_card.classList.toggle("active");
-
-    let observer = new IntersectionObserver(
+    // active the components
+    const Observer = new IntersectionObserver(
       (e) => {
         if (e[0].isIntersecting) {
-          detail_card.classList.add("active");
-          skill_item_cntnr.classList.add("active");
-          // observer.unobserve(skill_page);
+          skill_page.classList.add("active");
         } else {
-          skill_item_cntnr.classList.remove("active");
-          // detail_card.classList.remove("active");
+          skill_page.classList.remove("active");
         }
       },
       {
         root: null,
-        threshold: 1,
+        thresold: 1,
       }
     );
-    observer.observe(skill_page);
+
+    Observer.observe(skill_page);
 
     return () => {
-      observer.unobserve(skill_page);
-      // console.log("Unmounting");
+      Observer.unobserve(skill_page);
+      expandButton.removeEventListener("click", expandButtonFunction);
+
+      for (let x of detailButton) {
+        x.removeEventListener("click", detailButtonFunction);
+      }
+
+      console.log("Unmounting");
     };
-  }, [filter_btn, exp_btn]);
+  }, [expandBtn]);
 
   return (
     <>
@@ -857,33 +836,24 @@ const Skill = () => {
             <h2>SKILLS</h2>
           </div>
           <div className="lower_part">
-            <div className="filter_cntnr deactive">
-              {filter_btn == 0 ? (
-                <i className="fa fa-filter" aria-hidden="true"></i>
-              ) : (
-                <i className="fa fa-times" aria-hidden="true"></i>
-              )}
+            <div className="filter_cntnr">
               {skillCategory_data.map((item, index) => {
-                if (filter_btn)
-                  return (
-                    <span
-                      key={index}
-                      className={
-                        item.id == categoryId
-                          ? "filter_item active"
-                          : "filter_item"
-                      }
-                      onClick={() => upd_categoryId(item.id)}
-                    >
-                      <p>{item.name}</p>
-                    </span>
-                  );
-                else {
-                  return null;
-                }
+                return (
+                  <span
+                    key={index}
+                    className={
+                      item.id == categoryId
+                        ? "filter_item active"
+                        : "filter_item"
+                    }
+                    onClick={() => upd_categoryId(item.id)}
+                  >
+                    <p>{item.name}</p>
+                  </span>
+                );
               })}
             </div>
-            <div className="skill_items_cntnr deactive">
+            <div className="skill_items_cntnr">
               {skill_data.map((item, index) => {
                 if (
                   skillCategory_data[categoryId].name == "all" ||

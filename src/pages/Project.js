@@ -176,7 +176,7 @@ const Project = () => {
                       rel="external"
                     >
                       <i className="fa fa-eye" aria-hidden="true"></i>
-                      <i>View-Code</i>
+                      <i>Source-Code</i>
                     </a>
                   </span>
                   <span className="card_deploy_link">
@@ -186,7 +186,7 @@ const Project = () => {
                       rel="external"
                     >
                       <i className="fa fa-external-link" aria-hidden="true"></i>
-                      <i>Deploy</i>
+                      <i>View-Live</i>
                     </a>
                   </span>
                 </div>

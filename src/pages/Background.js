@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./../CSS Folder/Background.css";
+import "../CSS Folder/Background.css";
 
 // import the components
 import Home from "./Home";
@@ -9,7 +9,7 @@ import AboutUs from "./AboutUs";
 import MenuBar from "../components/MenuBar";
 import PopUp from "../components/PopUp";
 import Contact from "./Contact";
-import Feedback from "./Feedback";
+// import Feedback from "./Feedback";
 
 // import the npm packages
 // import { Route, Routes } from "react-router-dom";
@@ -17,7 +17,7 @@ import Feedback from "./Feedback";
 const Background = () => {
   const [pageLength, upd_pageLength] = useState(0);
   const [contactPage, upd_contactPage] = useState(0);
-  const [feedbackPage, upd_feedbackPage] = useState(0);
+  // const [feedbackPage, upd_feedbackPage] = useState(0);
 
   const closeContact = () => {
     upd_contactPage(0);
@@ -45,14 +45,20 @@ const Background = () => {
   return (
     <>
       <div className="background_container">
+        {/*  */}
+
         <Home />
         <Project />
         <Skill />
         <AboutUs openContact={showContanct} />
+
         {contactPage ? (
           <PopUp children={<Contact />} closepopUp={closeContact} />
         ) : null}
-        {feedbackPage ? <PopUp children={<Feedback />} /> : null}
+
+        {/* {feedbackPage ? <PopUp children={<Feedback />} /> : null} */}
+
+        {/*  */}
       </div>
       <MenuBar lenght={pageLength} openContact={showContanct} />
     </>

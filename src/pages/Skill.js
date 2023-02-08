@@ -759,11 +759,14 @@ const Skill = () => {
       x.addEventListener("click", detailButtonFunction);
     }
 
+    const about_page = document.querySelector(".aboutUs_page");
+
     const skill_page = document.querySelector(".skill_page");
     // active the components
     const Observer = new IntersectionObserver(
       (e) => {
         if (e[0].isIntersecting) {
+          // console.log(skill_page);
           skill_page.classList.add("active");
         } else {
           skill_page.classList.remove("active");
@@ -771,11 +774,11 @@ const Skill = () => {
       },
       {
         root: null,
-        thresold: 1,
+        thresold: 0,
       }
     );
 
-    Observer.observe(skill_page);
+    Observer.observe(about_page);
 
     return () => {
       Observer.unobserve(skill_page);
@@ -785,9 +788,9 @@ const Skill = () => {
         x.removeEventListener("click", detailButtonFunction);
       }
 
-      console.log("Unmounting");
+      // console.log("Unmounting");
     };
-  }, [expandBtn]);
+  }, [expandBtn, categoryId]);
 
   return (
     <>

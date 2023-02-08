@@ -7,7 +7,7 @@ const about_data = [
     id: 0,
     imp: false,
     content:
-      "I am passionate in the programming and logic building & I am also enjoy building User Experience and Interface",
+      "I am passionate in programming and logic building or I also enjoy building User Experience and Interface",
   },
   {
     id: 1,
@@ -18,13 +18,13 @@ const about_data = [
   {
     id: 2,
     imp: true,
-    content: "I am also a Good Problem Solver. 1500+ ratings on LeetCode",
+    content: "I am also a Good Problem Solver 1500+ ratings on LeetCode",
   },
   {
     id: 3,
     imp: false,
     content:
-      "I have a Competative thinking which help me to grow fast and learn more & more.",
+      "I have a Competitive thinking which help me to grow fast and learn more & more.",
   },
 ];
 

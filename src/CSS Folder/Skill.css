@@ -342,10 +342,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem 3rem;
+  gap: 1.5rem 2.5rem;
   width: 70%;
   height: 100%;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   overflow-y: scroll;
   overflow-x: hidden;
   /* border: 1px solid yellow; */
@@ -466,6 +466,9 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .skill_page .section_right .lower_part .skill_items_cntnr {
+    gap: 1.5rem 1.5rem;
+  }
   .skill_page .section_right .filter_cntnr .filter_item p {
     font-size: 1.1rem;
   }

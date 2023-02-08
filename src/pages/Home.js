@@ -45,7 +45,7 @@ const Home = () => {
                   <strong>{tag_line}</strong>
                   <span className="link_resume">
                     <a
-                      href="https://www.linkedin.com/in/nitesh--yadav/"
+                      href="https://drive.google.com/file/d/1cBLMTtMyRz8XsVwazCwTpNwjhmEqQQWl/view?usp=share_link"
                       target="_blank"
                       rel="external"
                     >

@@ -774,7 +774,7 @@ const Skill = () => {
       },
       {
         root: null,
-        thresold: 0,
+        thresold: 0.8,
       }
     );
 

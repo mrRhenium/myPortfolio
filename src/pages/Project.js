@@ -75,8 +75,8 @@ const project_data = [
     id: 3,
     rank: 4,
     active: 1,
-    gitHubLink: "https://myportfolio-0.1-version.netlify.app/",
-    siteLink: "https://github.com/mrRhenium/myPortfolio",
+    gitHubLink: "https://github.com/mrRhenium/myPortfolio",
+    siteLink: "https://my-portfolio-beta-version2022.netlify.app/",
     titleImg: "./assets/project/portfolio_logo.png",
     title: "My Portfolio.",
     subTitle: "- Best UI/UX project",
@@ -118,7 +118,7 @@ const Project = () => {
       },
       {
         root: null,
-        threshold: 1,
+        threshold: 0.7,
       }
     );
     observer.observe(project_page);
